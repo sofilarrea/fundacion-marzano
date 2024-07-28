@@ -9,15 +9,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-root{
-    --button-color:  #27642E;
-    --title-color: #ED920E;
-}
+
 body{
     font-family: 'Lato', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e0dede;
     color: #333;
-    line-height: 1.6;
-    font-size: 0.9rem;
-    font-family: "Lato", sans-serif;
+    line-height: 1.2;
+    font-size: 0.9rem;   
 }
