@@ -42,6 +42,10 @@
     color: white;
     text-align: center;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .carousel-content h1 {
@@ -178,25 +182,27 @@ display: none;
     flex-direction: column;
 }
 .button{
-    display: flex;
-    justify-content: center;
-    align-items: center;   
-    background-color: #27642E;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 10px;
-    text-transform: uppercase;
-    font-weight: bold;
-    box-shadow: none;
-    cursor: pointer;
-    width: 150px;
-    height: 45px;
+    background-color: #27642E; 
+    color: white; 
+    border: none; 
+    border-radius: 12px; 
+    padding: 12px 24px; 
+    font-size: 16px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    outline: none; 
+    box-shadow: none; 
    
 }
-.button:hover{
-    background-color: #ED920E;
-    
-    transition: 0.5s;
+.button:hover {
+    background-color: #31ab4b; /* Verde más oscuro en hover */
+    transform: scale(1.05); /* Efecto de aumento */
+}
+
+.button:focus {
+    outline: none; /* Asegura que no haya contorno en el foco */
 }
 .hero-content h1{
     font-size: 2.5rem;
@@ -484,17 +490,6 @@ display: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra a la tarjeta */
     padding: 20px; /* Ajusta el relleno de la tarjeta según sea necesario */
     background-color: white; /* O el color de fondo que prefieras */
-}
-
-
-.container-title {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.subtitle {
-    font-size: 2em;
-
 }
 .carousel-dos {
     display: flex;

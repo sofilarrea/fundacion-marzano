@@ -73,5 +73,5 @@ document.addEventListener('DOMContentLoaded', () => {
     prevButton.addEventListener('click', showPrev);
 
     // Opcional: Agregar cambio automático de imagen cada 3 segundos
-    setInterval(showNext, 3000);
+    setInterval(showNext, 1000);
 });
