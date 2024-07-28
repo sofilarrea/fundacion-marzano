@@ -189,6 +189,11 @@ display: none;
     height: 45px;
    
 }
+.button:hover{
+    background-color: #ED920E;
+    
+    transition: 0.5s;
+}
 .hero-content h1{
     font-size: 2.5rem;
     padding: 20px;
@@ -307,4 +312,95 @@ display: none;
     box-shadow: 0 0 10px #0A375F;
     transition: 0.5s;
     
+}
+
+/* Section Cinco */
+.container-cinco{
+    background-color: #0A375F;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.uno{
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+
+}
+.uno h3{
+    font-size: 2rem;
+}
+.uno h5{
+    font-size: 1.1rem;
+}
+.dos{
+    color: white;
+    padding: 20px;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.dos h3{
+    font-size: 2rem;
+
+}
+.dos h5{
+    font-size: 1.1rem;
+
+}
+/* Section seis */
+.tarjetas-seccion-seis{
+    background-color: white;
+    padding: 20px;
+    width: 90%;
+    height:auto;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(8, 3, 3, 0.5);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 15px;
+}
+.tarjeta-seccion-seis{
+    background-color: white;
+    border: 2px solid #0A375F; 
+    padding: 20px;
+    width: 80%;  
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+}
+.tarjeta-seccion-seiss{
+    background-color: white;
+    border: 2px solid #0A375F; 
+    padding: 20px;
+    width: 80%;  
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    gap: 20px;
+}
+.tarjeta-seccion-seiss:hover{
+    background-color: #0A375F ;
+    color: white
 }
