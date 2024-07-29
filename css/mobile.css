@@ -168,7 +168,7 @@ display: none;
 #navbar:target .close {
 display: block;
 }
-#navbar:target .menu-icon .close {
+.close {
 
 display: none;
 }
