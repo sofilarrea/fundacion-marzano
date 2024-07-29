@@ -168,7 +168,8 @@ display: none;
 #navbar:target .close {
 display: block;
 }
-.close {
+#navbar:target .menu-icon .close {
+
 display: none;
 }
 .nav.scrolled {
@@ -443,12 +444,19 @@ display: none;
 /* Sección siete*/
 .container-siete{
     display: flex;
+    justify-content: center;   
+    flex-direction: column;
+    padding: 20px;
+}
+.container-siete figure{
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px;
 }
 .container-siete figure img{
+    margin-top: 30px;
     width: 260px;
     height: 100%;
     border-radius: 20px;
