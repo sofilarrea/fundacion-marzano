@@ -175,6 +175,14 @@ display: none;
     background-color: #E0DEDE;
     box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2); /* Ajusta la sombra si es necesario */
 }
+.redes-sociales{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+.redes-sociales li img{
+    width: 30px;
+}
 .hero-content{
     display: flex;
     justify-content: center;
@@ -197,7 +205,7 @@ display: none;
    
 }
 .button:hover {
-    background-color: #31ab4b; /* Verde más oscuro en hover */
+    background-color: #218838; /* Verde más oscuro en hover */
     transform: scale(1.05); /* Efecto de aumento */
 }
 
