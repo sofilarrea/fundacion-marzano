@@ -1,93 +1,95 @@
-function handleScroll() {
-    const navbar = document.getElementById('navbar');
-  
-    if (navbar) {
-      window.addEventListener('scroll', () => {
-        if (window.scrollY > 60) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
-      });
-    }
-  }
-
-  // Ejecutar las funciones
-  handleScroll();
-  
 document.addEventListener('DOMContentLoaded', () => {
-    let currentIndex = 0;
-    const items = document.querySelectorAll('.carousel-item');
-    const totalItems = items.length;
+    const navbar = document.getElementById('navbar');
 
-    function updateCarousel() {
-        const offset = -currentIndex * 100;
-        document.querySelector('.carousel').style.transform = `translateX(${offset}%)`;
+    // Control de navbar al hacer scroll
+    function handleScroll() {
+        if (window.scrollY > 60) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    }
+    
+    window.addEventListener('scroll', handleScroll);
+
+    // Control de carrusel genérico
+    function initializeCarousel(carouselClass, prevButtonClass, nextButtonClass, intervalTime = 4000) {
+        let currentIndex = 0;
+        const items = document.querySelectorAll(carouselClass);
+        const totalItems = items.length;
+        const prevButton = document.querySelector(prevButtonClass);
+        const nextButton = document.querySelector(nextButtonClass);
+
+        function updateCarousel() {
+            const offset = -currentIndex * 100;
+            document.querySelector(carouselClass).style.transform = `translateX(${offset}%)`;
+        }
+
+        function showNext() {
+            currentIndex = (currentIndex + 1) % totalItems;
+            updateCarousel();
+        }
+
+        function showPrev() {
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+            updateCarousel();
+        }
+
+        nextButton?.addEventListener('click', showNext);
+        prevButton?.addEventListener('click', showPrev);
+
+        setInterval(showNext, intervalTime);
     }
 
-    function showNext() {
-        currentIndex = (currentIndex + 1) % totalItems;
-        updateCarousel();
-    }
+    // Inicializar carruseles
+    initializeCarousel('.carousel-item', '.carousel-button.prev', '.carousel-button.next', 4000);
+    initializeCarousel('.carousel-item-dos', '.carousel-button.prev', '.carousel-button.next', 1500);
 
-    document.querySelector('.carousel-button.prev').addEventListener('click', () => {
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
-        updateCarousel();
+    // Evento en las tarjetas
+    const tarjetas = document.querySelectorAll('.tarjetas');
+    tarjetas.forEach(tarjeta => {
+        tarjeta.addEventListener('click', () => {
+            window.open('proyectoeducativo.html', '_blank');
+        });
     });
 
-    document.querySelector('.carousel-button.next').addEventListener('click', showNext);
-
-    setInterval(showNext, 4000); 
+    // Evento en acordeones
+    const acordeon = document.querySelectorAll(".accordion-header");
+    acordeon.forEach(header => {
+        header.addEventListener('click', function() {
+            console.log("Hola Mundo");
+        });
+    });
 });
-let currentIndex = 0;
-const items = document.querySelectorAll('.carousel-item');
 
-function showNextItem() {
-    items[currentIndex].classList.remove('active');
-    currentIndex = (currentIndex + 1) % items.length;
-    items[currentIndex].classList.add('active');
-}
 
-/* -----Carousel Asociados--------*/ 
+/* Accordeon */
 document.addEventListener('DOMContentLoaded', () => {
-    let currentIndex = 0;
-    const items = document.querySelectorAll('.carousel-item-dos');
-    const totalItems = items.length;
-    const carousel = document.querySelector('.carousel-dos');
-    const prevButton = document.querySelector('.carousel-button.prev');
-    const nextButton = document.querySelector('.carousel-button.next');
+    const headers = document.querySelectorAll('.accordion-header');
 
-    function updateCarousel() {
-        const offset = -currentIndex * 100;
-        carousel.style.transform = `translateX(${offset}%)`;
-    }
+    headers.forEach(header => {
+        header.addEventListener('click', function () {
+            const section = this.parentElement;
+            const content = section.querySelector('.accordion-content');
 
-    function showNext() {
-        currentIndex = (currentIndex + 1) % totalItems;
-        updateCarousel();
-    }
+            if (section) {
+                if (section.classList.contains('active')) {
+                    content.style.height = content.scrollHeight + 'px'; // Aseguramos la altura completa
+                    requestAnimationFrame(() => { // Deferimos al siguiente frame para activar la transición
+                        content.style.height = '0';
+                    });
+                    section.classList.remove('active');
+                } else {
+                    document.querySelectorAll('.accordion-section').forEach(sec => {
+                        sec.querySelector('.accordion-content').style.height = '0'; // Colapsamos los otros
+                        sec.classList.remove('active');
+                    });
 
-    function showPrev() {
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
-        updateCarousel();
-    }
-
-    nextButton.addEventListener('click', showNext);
-    prevButton.addEventListener('click', showPrev);
-
-    // Opcional: Agregar cambio automático de imagen cada 3 segundos
-    setInterval(showNext, 1500);
+                    section.classList.add('active');
+                    content.style.height = content.scrollHeight + 'px'; // Expandimos el contenido
+                }
+            }
+        });
+    });
 });
-const educacion = document.getElementById('educacion')
-educacion.addEventListener('click', function(){
-    window.open("anexo.html", "_blank");
-    
-}) 
 
-
-const acordeon = document.querySelectorAll(".accordion-header")
-acordeon.forEach(header =>{
-    header.addEventListener('click', function(){
-        console.log("Hola Mundo")
-    })
-})
