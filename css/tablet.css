@@ -11,8 +11,30 @@
     color: #fff;
 }
 .navbar-links li a:hover {
-    color:#727070;
+    color:#ED920E;
 }
+.navbar-links li a img{
+  display: flex;
+  width: 20px;
+}
+.li a img {
+  transition: transform 0.4s ease; /* Para un efecto suave */
+}
+
+li a:hover img {
+  transform: scale(2.1); /* Aumenta ligeramente el tamaño del ícono */
+}
+
+li a.instagram:hover img {
+  filter: invert(40%) sepia(70%) saturate(700%) hue-rotate(330deg) brightness(90%) contrast(90%);
+  /* Cambia los valores de `filter` para crear el efecto de color deseado para Instagram */
+}
+
+li a.facebook:hover img {
+  filter: invert(31%) sepia(95%) saturate(2919%) hue-rotate(175deg) brightness(89%) contrast(86%);
+  /* Cambia los valores de `filter` para crear el efecto de color deseado para Facebook */
+}
+
 .primera-section{
     padding: 50px;
 }

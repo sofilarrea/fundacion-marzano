@@ -95,7 +95,7 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-between;
-    z-index: 10;
+    z-index: 1000000;
     transition: background-color 0.3s ease;
     height: 68px;
     position: fixed !important;
@@ -139,7 +139,7 @@ font-family: "roboto", sans-serif;
 font-size: 0.9rem;
 font-weight: bold;
 text-transform: uppercase;
-opacity: 0.5;
+/* opacity: 0.5; */
 letter-spacing: 1px;
 }
 
@@ -161,7 +161,7 @@ position: relative;
 top: -10px;
 }
 .navbar-links li a:hover{
-    color: rgb(14, 14, 14);
+    color: #ED920E;
 
 }
 #navbar:target .open {
@@ -171,14 +171,13 @@ display: none;
 display: block;
 }
 .close {
-
 display: none;
 }
 .nav.scrolled {
     background-color: #E0DEDE;
     box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2); /* Ajusta la sombra si es necesario */
 }
-.redes-sociales{
+.navbar-links li a img{
    display: none;
 }
 .redes-sociales li img{
