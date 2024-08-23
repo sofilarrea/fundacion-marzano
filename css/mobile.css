@@ -177,9 +177,7 @@ display: none;
     box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2); /* Ajusta la sombra si es necesario */
 }
 .redes-sociales{
-    list-style: none;
-    display: flex;
-    gap: 10px;
+   display: none;
 }
 .redes-sociales li img{
     width: 30px;
