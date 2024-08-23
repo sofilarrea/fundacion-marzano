@@ -436,10 +436,13 @@ display: none;
     padding: 20px;
     border-radius: 20px;
     gap: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+
 }
 .tarjeta-seccion-seiss:hover{
     background-color: #0A375F ;
-    color: white
+    color: white;
+    transform: scale(1.1);
 }
 /* Sección siete*/
 .container-siete{
