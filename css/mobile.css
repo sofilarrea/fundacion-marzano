@@ -917,8 +917,7 @@ display: none;
       border-top: 15px solid transparent;
       border-bottom: 15px solid transparent;
       border-right: 15px solid #fff;
-      right: 294px;
-      /* left: 30px; */
+      left: 65px;
       position: absolute;
       top: 14px;
   
@@ -960,7 +959,7 @@ display: none;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+
     padding: 20px;
 }
 
