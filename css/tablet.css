@@ -1,0 +1,30 @@
+.menu-icon{
+    display: none;
+}
+.navbar-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    gap: 20px;
+    list-style: none;
+    margin: 0 20px;
+    color: #fff;
+}
+.navbar-links li a:hover {
+    color:#727070;
+}
+.primera-section{
+    padding: 50px;
+}
+.seccion-dos{
+    padding: 50px;
+}
+.seccion-tres{
+    padding: 50px;
+}
+.container-cuatro{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 50px;
+}
