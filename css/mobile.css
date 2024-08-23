@@ -487,37 +487,46 @@ display: none;
 } */
 /* Estilos para la sección */
 .seccion-ocho {
-    padding: 20px;   
-}
-
-.container-ocho {
+    padding: 20px;
+  }
+  
+  .container-ocho {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     flex-wrap: wrap;
-   
-}
-
-.tarjeta-ocho {
-    position: relative; /* Para posicionar los botones de navegación */
-    overflow: hidden; /* Evita que el carrusel sobrepase los límites de la tarjeta */
-    border-radius: 10px; /* Ajusta el radio del borde de la tarjeta */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega sombra a la tarjeta */
-    padding: 20px; /* Ajusta el relleno de la tarjeta según sea necesario */
-    background-color: white; /* O el color de fondo que prefieras */
-}
-.carousel-dos {
+  
+  }
+  
+  .tarjeta-ocho {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    background-color: white;
+  }
+  .carousel-dos {
     display: flex;
     width: 100%;
     position: relative;
-}
-
-.carousel-item-dos img {
+  
+  }
+  .carousel-item-dos {
+    min-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+  }
+  .carousel-item-dos img {
     width: 160px;
     height: auto;
-}
-
+  }
+  
 /* Footer */
 
 .footer {
