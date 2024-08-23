@@ -139,3 +139,17 @@ document.addEventListener('DOMContentLoaded', () => {
         content.style.height = '0'; // Collapse all sections on page load
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Seleccionamos todas las tarjetas
+    const tarjetas = document.querySelectorAll('.tarjetas');
+
+    // Iteramos sobre cada tarjeta y añadimos el evento de clic
+    tarjetas.forEach(tarjeta => {
+        tarjeta.addEventListener('click', () => {
+            // Redirigimos a proyectoeducativo.html
+            window.location.href = 'proyectoeducativo.html';
+        });
+    });
+});

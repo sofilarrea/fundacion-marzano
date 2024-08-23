@@ -957,7 +957,10 @@ display: none;
 .ideario {
     position: relative;
     background-image: radial-gradient(rgba(0, 0, 0, 0.87), rgba(10, 2, 9, 0.636)), url('/assets/images/niñas.jpg');
-    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
     padding: 20px;
 }
 
