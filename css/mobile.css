@@ -293,7 +293,7 @@ display: none;
 }
 .container-tres{
     position: relative;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.755), rgba(10, 2, 9, 0.636)), url('/assets/images/mujeres.jpg');
+    background-image: radial-gradient(rgba(0, 0, 0, 0.755), rgba(10, 2, 9, 0.636)), url('/assets/images/chicos.jpg');
     border-radius: 20px;
     padding: 50px;
 }
@@ -645,4 +645,24 @@ display: none;
     .footer__nav {
       flex: 2 0px;
     }
+  }
+
+
+  #subtitulo {
+    display: none;
+    font-size: 14px;
+    color: #666;
+  }
+
+  #popup {
+    display: none;
+    position: absolute;
+    background-color: #ede8e8;
+    border: 1px solid #ccc;
+    padding: 70px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 1000;
+    width: 500px;
+    border-radius: 10px;
+    font-size: 1.01rem;
   }

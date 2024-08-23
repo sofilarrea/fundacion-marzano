@@ -75,3 +75,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Opcional: Agregar cambio automático de imagen cada 3 segundos
     setInterval(showNext, 1500);
 });
+const educacion = document.getElementById('educacion')
+educacion.addEventListener('click', function(){
+    window.open("anexo.html", "_blank");
+    
+}) 
