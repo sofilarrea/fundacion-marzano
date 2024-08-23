@@ -109,3 +109,12 @@ li a.facebook:hover img {
     width: 600px;
   }
   
+
+
+  /* Ideario */
+  .ideario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }

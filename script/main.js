@@ -106,4 +106,36 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const headers = document.querySelectorAll('.accordion-header-ideario');
 
+    headers.forEach(header => {
+        header.addEventListener('click', function () {
+            const section = this.parentElement;
+            const content = section.querySelector('.accordion-content-ideario');
+            
+            // Check if the clicked section is already active
+            const isActive = section.classList.contains('active');
+
+            // Collapse all sections
+            document.querySelectorAll('.accordion-section-ideario').forEach(sec => {
+                const secContent = sec.querySelector('.accordion-content-ideario');
+                if (secContent) {
+                    secContent.style.height = '0'; // Collapse all sections
+                }
+                sec.classList.remove('active');
+            });
+
+            // If the clicked section was not active, expand it
+            if (!isActive) {
+                section.classList.add('active');
+                content.style.height = content.scrollHeight + 'px'; // Expand the content
+            }
+        });
+    });
+
+    // Ensure all sections are collapsed initially
+    document.querySelectorAll('.accordion-content-ideario').forEach(content => {
+        content.style.height = '0'; // Collapse all sections on page load
+    });
+});

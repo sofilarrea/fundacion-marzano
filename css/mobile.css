@@ -953,4 +953,51 @@ display: none;
   }
   
 
-  
+/* Proyecto Educativo */
+.ideario {
+    position: relative;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.87), rgba(10, 2, 9, 0.636)), url('/assets/images/niñas.jpg');
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.accordion-ideario {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.accordion-section-ideario {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-header-ideario {
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-weight: 100;
+}
+
+.accordion-header-ideario img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.accordion-content-ideario {
+    height: 0;
+    padding: 0 15px;
+    background-color: white;
+    font-size: 1.3rem;
+    overflow: hidden;
+    transition: height 0.6s ease;
+}
+
+.accordion-section-ideario.active .accordion-content-ideario {
+    height: auto;
+    padding: 15px; 
+}
