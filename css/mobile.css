@@ -872,6 +872,7 @@ display: none;
     font-size: 18px;
     display: flex;
     align-items: center;
+    gap: 10px;
   }
   .accordion-header img {
     margin-right: 10px;
@@ -924,13 +925,11 @@ display: none;
       top: 36px;
   
   }
-  .date {
-    position: absolute;
-    top: -40px; /* Ajusta según lo necesario */
-    left: 50px; /* Ajusta según lo necesario */
+  .date-right,
+  .date-left {
     font-size: 1rem;
-    font-weight: bold;
-    color: #333;
+    position: absolute;
+    right: 82%;
 }
   }
   @media screen and (min-width: 24.375em) {
