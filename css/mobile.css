@@ -97,10 +97,10 @@
     justify-content: space-between;
     z-index: 1000000;
     transition: background-color 0.3s ease;
-    height: 68px;
+    height: 80px;
     position: fixed !important;
     top: 0;
-    background-color: #E1E1E1;
+    background-color: #033158;
     cursor: pointer;
 }
 
@@ -134,7 +134,7 @@
 .home a,
 .navbar-links li a {
 text-decoration: none;
-color: rgb(2, 2, 2);
+color: whitesmoke;
 font-family: "roboto", sans-serif;
 font-size: 0.9rem;
 font-weight: bold;
@@ -154,11 +154,12 @@ height: 100vh;
 width: 100%;
 padding: 20px;
 margin: 0;
-background-color: #e1e1e1;
+background-color: #033158;
 justify-content: center;
 list-style: none;
 position: relative;
 top: -10px;
+color: whitesmoke;
 }
 .navbar-links li a:hover{
     color: #ED920E;
@@ -542,8 +543,9 @@ display: none;
     flex-flow: row wrap;
     padding: 30px 30px 20px 30px;
     color: #2f2f2f;
-    background-color: #fff;
+    background-color: #033158;
     border-top: 1px solid #e5e5e5;
+    color: whitesmoke;
   }
   
   .footer > * {
@@ -562,7 +564,7 @@ display: none;
     font-size: 1.5rem;
   }
   .footer__logo img{
-    width: 80px;
+    width: 150px;
   }
   
   .footer__addr h2 {
@@ -983,6 +985,7 @@ display: none;
     display: flex;
     align-items: center;
     font-weight: 100;
+    gap: 20px;
 }
 
 .accordion-header-ideario img {
