@@ -921,9 +921,17 @@ display: none;
       border-right: 15px solid #fff;
       left: 65px;
       position: absolute;
-      top: 14px;
+      top: 36px;
   
   }
+  .date {
+    position: absolute;
+    top: -40px; /* Ajusta según lo necesario */
+    left: 50px; /* Ajusta según lo necesario */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
   }
   @media screen and (min-width: 24.375em) {
     .legal .legal__links {

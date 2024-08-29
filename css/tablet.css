@@ -118,3 +118,13 @@ li a.facebook:hover img {
     align-items: center;
 
   }
+  .date-right{
+    position: absolute;
+    right: 88%;
+    font-size: 1rem;
+  }
+  .date-left{
+    position: absolute;
+    left: 88%;
+    font-size: 1rem;
+  }
