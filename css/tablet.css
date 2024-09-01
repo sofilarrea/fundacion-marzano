@@ -118,7 +118,7 @@ li a.facebook:hover img {
     align-items: center;
 
   }
-  .date-right{
+/*   .date-right{
     position: absolute;
     right: 88%;
     font-size: 1rem;
@@ -128,3 +128,10 @@ li a.facebook:hover img {
     left: 88%;
     font-size: 1rem;
   }
+ */
+ .date{
+  font-size: 1.1rem;
+  color:#ED920E;
+  font-weight: bold;
+
+}

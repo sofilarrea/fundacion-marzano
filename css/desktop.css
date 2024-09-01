@@ -55,6 +55,30 @@
 .home img {
     width: 89px;
 }
+.ideario-dos{
+  max-width: 1671px;
+}
+.parrafo h3{  
+  font-size: 3rem;
+}
+.parrafo p{
+  font-size: 2.5rem;
+}
+.text-box{
+  font-size: 29px;
+}
+.title-dos-nosotros{
+  font-size: 3rem;
+}
+.title-dos{
+  font-size: 3rem;
+}
+.date-left{
+  font-size:2.5rem;
+}
+.date-right{
+  font-size:2.5rem;
+}
 }
 .date-right{
   right: 91%;
@@ -73,7 +97,7 @@
 
 /* Estilo para escritorio (dos cards por fila) */
 @media (min-width: 1025px) {
-  .container {
+  .container-ideario {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -82,7 +106,7 @@
     width: 100%;
   }
 
-  .container .card {
+  .container-ideario .card {
     width: 100%;
   }
 }
