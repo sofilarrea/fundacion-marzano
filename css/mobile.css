@@ -695,7 +695,14 @@ display: none;
 /* Nosotros */
 
 /* Section one */
+.title-centro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .title-dos-nosotros{
+  
     font-size: 2rem;
     font-family: "Playfair Display", serif;
     padding: 20px;
@@ -735,6 +742,11 @@ display: none;
   }
   
   /* Section two */
+/*   .timeline-section-dos{
+    border-radius: 20px;  
+  
+    background-color: #0A375F; 
+  } */
   .timeline{
     position: relative;
     max-width: 1200px;
@@ -1021,12 +1033,12 @@ display: none;
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background: #333;
   display: flex;
   justify-content: center;
   align-items: center;   
   font-family: sans-serif;
-  background-color: #f1f1f1; 
+ 
+   background-color: #f1f1f1;  
 }
 
 .container {
@@ -1088,10 +1100,9 @@ display: none;
   display: flex;
 }
 .p-dos{
-  position: absolute;
-  
+  position: absolute;  
   transform: translate(-50%, -50%);
-  font-size: 5px;
+  font-size: 4px;
   transition: 0.7s;
   color: #fff;
   display: flex;
@@ -1154,7 +1165,7 @@ display: none;
   font-size: 18px;
 }
 .container .card .face.face2 .content .p-dos{
-  font-size: 14px;
+  font-size: 13px;
 }
 .container .card .face.face2 .content h3 {
   margin: 0 0 10px 0;

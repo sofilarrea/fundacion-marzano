@@ -62,3 +62,27 @@
 .date-left{
   left: 91%;
 }
+/* Limitar y centrar la sección */
+.ideario-dos {
+  max-width: 1200px;
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 1200px; /* Limita el ancho de la sección */
+  padding: 0 20px; /* Añade algo de espacio a los lados */
+}
+
+/* Estilo para escritorio (dos cards por fila) */
+@media (min-width: 1025px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .container .card {
+    width: 100%;
+  }
+}
