@@ -140,16 +140,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-
 document.addEventListener('DOMContentLoaded', () => {
     // Seleccionamos todas las tarjetas
     const tarjetas = document.querySelectorAll('.tarjetas');
 
     // Iteramos sobre cada tarjeta y añadimos el evento de clic
-    tarjetas.forEach(tarjeta => {
+    tarjetas.forEach((tarjeta, index) => {
         tarjeta.addEventListener('click', () => {
-            // Redirigimos a proyectoeducativo.html
-            window.location.href = 'proyectoeducativo.html';
+            // Guardamos el índice del acordeón en sessionStorage
+            sessionStorage.setItem('acordeonAbierto', index);
+
+            // Redirigimos a la sección correspondiente
+            switch (index) {
+                case 0:
+                    window.location.href = 'proyectoeducativo.html#seccion1';
+                    break;
+                case 1:
+                    window.location.href = 'proyectoeducativo.html#seccion2';
+                    break;
+                case 2:
+                    window.location.href = 'proyectoeducativo.html#seccion3';
+                    break;
+                // Añadir más casos si hay más tarjetas/acordeones
+                default:
+                    window.location.href = 'proyectoeducativo.html';
+                    break;
+            }
         });
     });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    // Obtenemos el acordeón que debe abrirse desde sessionStorage
+    const acordeonAbierto = sessionStorage.getItem('acordeonAbierto');
+
+    if (acordeonAbierto !== null) {
+        // Seleccionamos todos los acordeones
+        const acordeones = document.querySelectorAll('.accordion-section-ideario');
+
+        // Abrimos el acordeón correspondiente
+        const acordeon = acordeones[acordeonAbierto];
+        if (acordeon) {
+            const content = acordeon.querySelector('.accordion-content-ideario');
+            const toggleIcon = acordeon.querySelector('.accordion-toggle i');
+
+            // Mostrar contenido
+            content.style.display = 'block'; // O agrega la clase correspondiente
+            toggleIcon.classList.remove('fa-chevron-down');
+            toggleIcon.classList.add('fa-chevron-up');
+
+            // Añadir la clase 'open' al acordeón
+            acordeon.classList.add('open'); 
+        }
+
+        // Limpiamos el sessionStorage
+        sessionStorage.removeItem('acordeonAbierto');
+    }
 });

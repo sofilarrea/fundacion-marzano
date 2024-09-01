@@ -73,19 +73,19 @@
 .title-dos{
   font-size: 3rem;
 }
-.date-left{
+/* .date-left{
   font-size:2.5rem;
 }
 .date-right{
   font-size:2.5rem;
+} */
 }
-}
-.date-right{
+/* .date-right{
   right: 91%;
 }
 .date-left{
   left: 91%;
-}
+} */
 /* Limitar y centrar la sección */
 .ideario-dos {
   max-width: 1200px;
