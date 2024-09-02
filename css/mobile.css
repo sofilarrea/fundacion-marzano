@@ -232,7 +232,7 @@ display: none;
 }
 .title{
     font-size: 2rem;
-    font-family: "Lato", sans-serif;
+    font-family: "Playfair Display", serif;
     padding: 20px;
     margin-bottom: 0px;
     margin-top: 48px;
@@ -304,7 +304,7 @@ display: none;
     position: relative;
     background-image: radial-gradient(rgba(0, 0, 0, 0.755), rgba(10, 2, 9, 0.636)), url('/assets/images/chicos.jpg');
     border-radius: 20px;
-    padding: 50px;
+    padding: 20px;
 }
 /* Section Cuatro */
 .container-cuatro{
@@ -361,9 +361,12 @@ display: none;
 }
 .uno h3{
     font-size: 2rem;
+    color: #ED920E;
+    font-weight: bold;
 }
 .uno h5{
     font-size: 1.1rem;
+    
 }
 .dos{
     color: white;
@@ -377,6 +380,7 @@ display: none;
 }
 .dos h3{
     font-size: 2rem;
+    color: #ED920E;
 
 }
 .dos h5{
@@ -386,10 +390,12 @@ display: none;
 /* Section seis */
 .container-title-seis{
     line-height: 18px;
+    font-family: "Playfair Display", serif;
+
 }
 .title-seis{
     font-size: 2rem;
-    font-family: "Lato", sans-serif;
+    font-family: "Playfair Display", serif;
     padding: 20px;
     margin-bottom: 0px;
     margin-top: 48px;
