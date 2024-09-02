@@ -1192,6 +1192,8 @@ display: none;
 
 
 .accordion-section-ideario.open {
-  background-color: #f0f0f0; /* Cambia el color de fondo cuando está abierto */
-  border-left: 4px solid #d51641; /* Agrega un borde o algún estilo especial */
+  background-color: #0A375F; /* Cambia el color de fondo cuando está abierto */
+  border-left: 4px solid #ED920E;
+  ; /* Agrega un borde o algún estilo especial */
 }
+
