@@ -1203,3 +1203,13 @@ display: none;
   ; /* Agrega un borde o algún estilo especial */
 }
 
+
+
+.title-dos-nosotros-proyecto{
+  font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    padding: 20px;
+    margin-bottom: 0px;
+    margin-top: 40px;
+    color: #ffffff;;
+}
