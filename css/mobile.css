@@ -1277,3 +1277,46 @@ display: none;
 .carousel-indicators .dot.active {
   background-color: #717171;
 }
+
+
+/* Las Retamas Page */
+.header-las-retamas {
+  background-image:linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.319)), url('/assets/images/oliva.jpeg'); /* Imagen de fondo */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Alinea el texto al centro */
+  position: relative;
+  color: white; /* Color del texto */
+}
+
+.title-de-nosotros {
+  z-index: 1; /* Asegura que el texto esté por encima de la imagen de fondo */
+}
+
+.title-retamas {
+  font-size: 2.5rem;
+  font-family: "Playfair Display", serif;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-family: "Playfair Display", serif;
+  margin-top: 10px;
+}
+
+/* Ajustes adicionales para hacer el contenido visible si es necesario */
+.nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 10px;
+  z-index: 2;
+}
+
