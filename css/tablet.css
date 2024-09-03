@@ -135,3 +135,9 @@ li a.facebook:hover img {
   font-weight: bold;
 
 }
+
+.accordion-section-ideario.open {
+  background-color: #0A375F; /* Cambia el color de fondo cuando está abierto */
+  border-left: 4px solid #ED920E;
+  ; /* Agrega un borde o algún estilo especial */
+}

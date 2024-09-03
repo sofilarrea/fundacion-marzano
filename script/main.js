@@ -78,89 +78,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 /* Accordeon */
+// Código para la página de las tarjetas (la que redirige a proyectoeducativo.html)
 document.addEventListener('DOMContentLoaded', () => {
-    const headers = document.querySelectorAll('.accordion-header');
+    const tarjetas = document.querySelectorAll('.tarjetas');
 
-    headers.forEach(header => {
-        header.addEventListener('click', function () {
-            const section = this.parentElement;
-            const content = section.querySelector('.accordion-content');
-
-            if (section) {
-                if (section.classList.contains('active')) {
-                    content.style.height = content.scrollHeight + 'px'; // Aseguramos la altura completa
-                    requestAnimationFrame(() => { // Deferimos al siguiente frame para activar la transición
-                        content.style.height = '0';
-                    });
-                    section.classList.remove('active');
-                } else {
-                    document.querySelectorAll('.accordion-section').forEach(sec => {
-                        sec.querySelector('.accordion-content').style.height = '0'; // Colapsamos los otros
-                        sec.classList.remove('active');
-                    });
-
-                    section.classList.add('active');
-                    content.style.height = content.scrollHeight + 'px'; // Expandimos el contenido
-                }
-            }
+    tarjetas.forEach(tarjeta => {
+        tarjeta.addEventListener('click', () => {
+            const acordeonId = tarjeta.getAttribute('data-acordeon');
+            sessionStorage.setItem('acordeonAbierto', acordeonId);
+            window.location.href = 'proyectoeducativo.html'; // Redirige a la página destino
         });
     });
 });
+
+// Código para la página proyectoeducativo.html
 document.addEventListener('DOMContentLoaded', () => {
-    const headers = document.querySelectorAll('.accordion-header-ideario');
+    const acordeonId = sessionStorage.getItem('acordeonAbierto');
 
-    headers.forEach(header => {
-        header.addEventListener('click', function () {
-            const section = this.parentElement;
-            const content = section.querySelector('.accordion-content-ideario');
+    if (acordeonId) {
+        const acordeon = document.getElementById(acordeonId);
+        if (acordeon) {
+            // Añade la clase para marcar el acordeón como activo
+            acordeon.classList.add('active');
             
-            // Check if the clicked section is already active
-            const isActive = section.classList.contains('active');
-
-            // Collapse all sections
-            document.querySelectorAll('.accordion-section-ideario').forEach(sec => {
-                const secContent = sec.querySelector('.accordion-content-ideario');
-                if (secContent) {
-                    secContent.style.height = '0'; // Collapse all sections
-                }
-                sec.classList.remove('active');
-            });
-
-            // If the clicked section was not active, expand it
-            if (!isActive) {
-                section.classList.add('active');
-                content.style.height = content.scrollHeight + 'px'; // Expand the content
+            // Despliega el contenido del acordeón
+            const content = acordeon.querySelector('.accordion-content-ideario');
+            if (content) {
+                content.style.height = content.scrollHeight + 'px'; // Despliega el contenido
             }
-        });
-    });
-    });
-
-
-    
-    document.addEventListener('DOMContentLoaded', () => {
-        const tarjetas = document.querySelectorAll('.tarjetas');
-    
-        tarjetas.forEach(tarjeta => {
-            tarjeta.addEventListener('click', () => {
-                const acordeonId = tarjeta.getAttribute('data-acordeon');
-                sessionStorage.setItem('acordeonAbierto', acordeonId);
-                window.location.href = 'proyectoeducativo.html'; // Cambia esta ruta
-            });
-        });
-    });
-    document.addEventListener('DOMContentLoaded', () => {
-        const acordeonId = sessionStorage.getItem('acordeonAbierto');
-        
-        if (acordeonId) {
-            const acordeon = document.getElementById(acordeonId);
-            if (acordeon) {
-                acordeon.classList.add('open'); // Añade la clase 'open'
-                const content = acordeon.querySelector('.accordion-content-ideario');
-                content.style.maxHeight = content.scrollHeight + 'px'; // Despliega el contenido
-            }
-    
-            // Borra el valor de sessionStorage
-            sessionStorage.removeItem('acordeonAbierto');
         }
-    });
-    
+
+        // Borra el valor de sessionStorage para que no se mantenga en la próxima carga
+        sessionStorage.removeItem('acordeonAbierto');
+    }
+});
