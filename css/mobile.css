@@ -706,8 +706,8 @@ display: none;
 /* Section one */
 .title-centro{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+
   flex-direction: column;
 }
 .title-dos-nosotros{
@@ -733,7 +733,8 @@ display: none;
     margin-top: 80px; /* Ajusta este valor según la altura de tu navbar */
   }
   .subtitle{
-    padding: 21px;
+    margin: 15px 0;
+    padding: 0px 23px;
     font-size: 2.3rem;
     margin-top: 0px;
     color: #ED920E;
@@ -741,7 +742,7 @@ display: none;
   }
   .parrafo h3{
     font-size: 1.5rem;
-    padding: 20px 82px;
+    padding: 20px 6px;
   }
   .parrafo p{
     padding: 6px 37px;
@@ -1202,7 +1203,7 @@ display: none;
   border-left: 4px solid #ED920E;
   ; /* Agrega un borde o algún estilo especial */
 }
-
+/* Nosotros pagina*/
 
 
 .title-dos-nosotros-proyecto{
@@ -1212,4 +1213,67 @@ display: none;
     margin-bottom: 0px;
     margin-top: 40px;
     color: #ffffff;;
+}
+.carousel-container {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-slide img {
+  width: 100%;
+  display: block;
+}
+
+.carousel-prev,
+.carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel-indicators .dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.carousel-indicators .dot.active {
+  background-color: #717171;
 }

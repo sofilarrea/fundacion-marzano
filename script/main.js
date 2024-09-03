@@ -170,3 +170,53 @@ document.addEventListener('DOMContentLoaded', () => {
         sessionStorage.removeItem('acordeonAbierto');
     }
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const nextBtn = document.querySelector('.carousel-next');
+    const prevBtn = document.querySelector('.carousel-prev');
+    const dots = document.querySelectorAll('.dot');
+    let currentIndex = 0;
+    const slideInterval = 3000; // Intervalo de 1000 milisegundos (1 segundo)
+
+    function showSlide(index) {
+        const wrapper = document.querySelector('.carousel-wrapper');
+        const width = slides[0].clientWidth;
+        wrapper.style.transform = `translateX(${-index * width}px)`;
+        currentIndex = index;
+
+        // Actualizar los puntos
+        dots.forEach(dot => dot.classList.remove('active'));
+        dots[currentIndex].classList.add('active');
+    }
+
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    nextBtn.addEventListener('click', nextSlide);
+    prevBtn.addEventListener('click', prevSlide);
+
+    // Puntos de control
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            showSlide(index);
+        });
+    });
+
+    // Mostrar la primera diapositiva
+    showSlide(currentIndex);
+
+    // Hacer que el carrusel pase automáticamente cada 1000 milisegundos
+    setInterval(() => {
+        nextSlide();
+    }, slideInterval);
+});
