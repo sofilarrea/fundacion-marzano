@@ -65,7 +65,7 @@
     background-color: #0A375F;
     list-style: none;
     position: relative;
-    top: -10px;
+    top: 0;
     color: whitesmoke;
 }
 
@@ -94,7 +94,7 @@
     display: none;
 }
 
-.redes-sociales li img {
+.redes-sociales-cfr li img {
     width: 30px;
 }
 
