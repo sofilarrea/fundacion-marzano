@@ -141,3 +141,36 @@ li a.facebook:hover img {
   border-left: 4px solid #ED920E;
   ; /* Agrega un borde o algún estilo especial */
 }
+
+
+
+
+/* Las Retamas */
+.container-dos-las-retamas {
+  flex-direction: row; /* Coloca los elementos uno al lado del otro */
+  align-items: center;
+  justify-content: space-between;
+}
+
+figure, .contenido-las-retamas {
+  width: 48%; /* Cada uno ocupa casi la mitad del espacio disponible */
+}
+
+.contenido-las-retamas {
+  text-align: left; /* Cambia la alineación del texto a la izquierda para pantallas más grandes */
+}
+
+.container-tres-las-retamas {
+  flex-direction: row; /* Cambiamos a fila para tabletas y más grandes */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contenido-las-retamas-dos {
+  width: 48%;
+  text-align: left; /* Alineamos el texto a la izquierda */
+}
+
+figure {
+  width: 48%; /* La imagen ocupará el 48% del ancho */
+}

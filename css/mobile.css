@@ -729,9 +729,9 @@ display: none;
     height: 100%;
     border-radius: 20px;
   }
-  section {
-    margin-top: 80px; /* Ajusta este valor según la altura de tu navbar */
-  }
+/*   section {
+    margin-top: 80px; 
+  } */
   .subtitle{
     margin: 15px 0;
     padding: 0px 23px;
@@ -1280,6 +1280,7 @@ display: none;
 
 
 /* Las Retamas Page */
+
 .header-las-retamas {
   background-image:linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.319)), url('/assets/images/oliva.jpeg'); /* Imagen de fondo */
   background-repeat: no-repeat;
@@ -1297,11 +1298,14 @@ display: none;
 }
 
 .title-de-nosotros {
-  z-index: 1; /* Asegura que el texto esté por encima de la imagen de fondo */
+  z-index: 1; 
 }
-
-.title-retamas {
-  font-size: 2.5rem;
+.subtitle-mision{
+  margin: 15px 0;
+  padding: 0px 23px;
+  font-size: 2.3rem;
+  margin-top: 0px;
+  color: #ED920E;
   font-family: "Playfair Display", serif;
 }
 
@@ -1311,12 +1315,103 @@ display: none;
   margin-top: 10px;
 }
 
-/* Ajustes adicionales para hacer el contenido visible si es necesario */
-.nav {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  padding: 10px;
-  z-index: 2;
+.container-dos-las-retamas figure img{
+  width: 355px;
 }
+.seccion-dos-las-retamas {
+  padding: 20px;
+}
+
+.container-dos-las-retamas {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+}
+
+figure {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+figure img {
+  width: 100%; 
+  height: auto;
+  border-radius: 20px;
+}
+
+.contenido-las-retamas {
+  padding: 10px;
+  text-align: justify;
+}
+
+
+/* Estilos básicos para la sección */
+.seccion-tres-las-retamas {
+  padding: 20px;
+}
+
+.container-title {
+ margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+/* Contenedor para la imagen y el contenido */
+.container-tres-las-retamas {
+  display: flex;
+  flex-direction: column; /* Por defecto en móvil, columna (texto primero, luego imagen) */
+  align-items: center;
+}
+
+.contenido-las-retamas-dos {
+  padding: 10px;
+  text-align: center;
+}
+
+figure {
+  margin: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+figure img {
+  width: 100%; /* Imagen de tamaño completo en móviles */
+  height: auto;
+}
+/* Estilos generales */
+.seccion-tres-las-retamas {
+  padding: 20px;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+/* Contenedor principal en móviles - contenido arriba y luego imagen */
+.container-tres-las-retamas {
+  display: flex;
+  flex-direction: column; /* Dirección en columna por defecto */
+  align-items: center;
+}
+
+.contenido-las-retamas-dos {
+  padding: 10px;
+  text-align: center;
+}
+
 
