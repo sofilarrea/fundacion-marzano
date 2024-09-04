@@ -15,11 +15,16 @@ body{
     background-color: #e0dede;
     color: #333;
     line-height: 1.2;
-    font-size: 0.9rem;   
+    font-size: 0.9rem; 
+    text-decoration: none;  
 }
 :root {
     --white: #fff;
     --black: #000;
     --primary: #d4a024;
     --gray: #616161;
+  }
+  a {
+    text-decoration: none; /* Quita el subrayado */
+    color: inherit; /* Hereda el color del elemento padre */
   }

@@ -260,7 +260,7 @@ display: none;
     font-size: 2rem;
     font-family: "Lato", sans-serif;
     padding: 20px;
-    margin-bottom: -24px;
+    margin-bottom: 14px;
     margin-top: 48px;
     color: white;
 }
@@ -354,7 +354,7 @@ display: none;
 }
 .uno{
     color: white;
-    padding: 20px;
+    padding: 5px;
     font-size: 1rem;
     font-family: "Lato", sans-serif;
 
@@ -1329,7 +1329,7 @@ display: none;
 .foto-las-retamas img {
   margin: 0;
   padding: 10px;
-  width: 450px;
+  width: 400px;
   border-radius: 20px;
 
 }
@@ -1720,8 +1720,8 @@ display: none;
 }
 
 .contacto-social {
-  display: flex;
-  align-items: center;
+  margin-right: 25px;
+  padding: 7px 10px;
 }
 
 .contacto-social img {
