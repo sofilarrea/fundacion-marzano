@@ -119,3 +119,6 @@
 .container-proyectos {
   grid-template-columns: 1fr 1fr;
 }
+.parrafo-cfr{
+ padding: 25px;
+}

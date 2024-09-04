@@ -173,3 +173,10 @@ figure, .contenido-las-retamas {
 .container-proyectos {
   grid-template-columns: 1fr 1fr;
 } 
+
+.foto-las-retamas img {
+  margin: 0;
+  padding: 10px;
+  width: 371px;
+}
+

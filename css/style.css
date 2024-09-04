@@ -17,3 +17,9 @@ body{
     line-height: 1.2;
     font-size: 0.9rem;   
 }
+:root {
+    --white: #fff;
+    --black: #000;
+    --primary: #d4a024;
+    --gray: #616161;
+  }
