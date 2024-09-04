@@ -170,3 +170,6 @@ figure, .contenido-las-retamas {
 .contenido-las-retamas-dos {
   width: 50%; /* El texto ocupa la otra mitad del ancho */
 }
+.container-proyectos {
+  grid-template-columns: 1fr 1fr;
+} 

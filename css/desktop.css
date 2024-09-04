@@ -116,3 +116,6 @@
   border-left: 4px solid #ED920E;
   ; /* Agrega un borde o algún estilo especial */
 }
+.container-proyectos {
+  grid-template-columns: 1fr 1fr;
+}

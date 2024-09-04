@@ -1329,7 +1329,7 @@ display: none;
   justify-content: center;
 }
 
-figure {
+.foto-las-retamas {
   margin: 0;
   padding: 10px;
   width: 100%;
@@ -1338,7 +1338,7 @@ figure {
   justify-content: center;
 }
 
-figure img {
+.foto-las-retamas img {
   width: 100%; 
   height: auto;
   border-radius: 20px;
@@ -1379,13 +1379,13 @@ figure img {
   text-align: center;
 }
 
-figure {
+.foto-las-retamas {
   margin: 0;
   padding: 10px;
   width: 100%;
 }
 
-figure img {
+.foto-las-retamas img {
   width: 100%; /* Imagen de tamaño completo en móviles */
   height: auto;
 }
@@ -1413,5 +1413,42 @@ figure img {
   padding: 10px;
   text-align: center;
 }
+.cfr-proyectos{
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
-
+.card-proyectos{
+  background-color: white;
+  padding: 20px;
+  width: 250px;
+  height:250px;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0 0 5px rgba(8, 3, 3, 0.5);
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 15px;
+}
+.card-figure{
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+.card-figure img{
+  width: 48px;
+}
+.container-proyectos {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
