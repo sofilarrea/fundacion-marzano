@@ -1670,8 +1670,16 @@ display: none;
   background: #FF6B6B;
 }
 
+/* video las retamas*/
 
-
-
-
+.container-siete video{
+  width: 248px;
+}
+.container-siete{
+  display: flex;
+  justify-content: center;   
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
 
