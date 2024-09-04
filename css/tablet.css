@@ -180,3 +180,8 @@ figure, .contenido-las-retamas {
   width: 371px;
 }
 
+.contacto{
+  .contenedor {
+    justify-content: flex-start; /* Cambia el comportamiento en tabletas */
+  }
+}

@@ -1,0 +1,753 @@
+/* Navbar Section */
+#navbar-cfr {
+    display: flex;
+    position: fixed;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1000000;
+    transition: background-color 0.3s ease;
+    height: 80px;
+    top: 0;
+    background-color: #0A375F;
+    cursor: pointer;
+}
+
+.home-cfr img {
+    width: 72px;
+    height: 90%; 
+    margin-right: 10px;
+}
+
+.navbar-links-cfr {
+    display: none;
+}
+
+.menu-icon-cfr {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    margin-right: 10px;
+}
+
+.fa-solid {
+    width: 15px;
+    height: 30px;
+    margin-top: 10px;
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.home-cfr a,
+.navbar-links-cfr li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Open and close menu */
+#navbar-cfr:target .navbar-links-cfr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    background-color: #0A375F;
+    list-style: none;
+    position: relative;
+    top: -10px;
+    color: whitesmoke;
+}
+
+.navbar-links-cfr li a:hover {
+    color: #ED920E;
+}
+
+#navbar-cfr:target .open {
+    display: none;
+}
+
+#navbar-cfr:target .close {
+    display: block;
+}
+
+.close {
+    display: none;
+}
+
+.nav-cfr.scrolled {
+    background-color: #E0DEDE;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-links-cfr li a img {
+    display: none;
+}
+
+.redes-sociales li img {
+    width: 30px;
+}
+
+
+.header-las-retamas {
+    background-image:linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.319)), url('/assets/images/oliva.jpeg'); /* Imagen de fondo */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos estén en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Alinea el texto al centro */
+    position: relative;
+    color: white; /* Color del texto */
+  }
+  
+  .title-de-nosotros {
+    z-index: 1; 
+  }
+  .subtitle-mision{
+    margin: 15px 0;
+    padding: 0px 23px;
+    font-size: 2.3rem;
+    margin-top: 0px;
+    color: #ED920E;
+    font-family: "Playfair Display", serif;
+  }
+  
+  .subtitle {
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    margin-top: -13px;
+  }
+  
+  .seccion-dos-las-retamas {
+    padding: 20px;
+  }
+  
+  .container-dos-las-retamas {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .foto-las-retamas img {
+    margin: 0;
+    padding: 10px;
+    width: 400px;
+    border-radius: 20px;
+  
+  }
+ 
+  
+  
+  /* Estilos básicos para la sección */
+  .seccion-tres-las-retamas {
+    padding: 20px;
+  }
+  
+  .container-title {
+   margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .subtitle {
+    font-size: 2rem;
+  }
+  
+  /* Contenedor para la imagen y el contenido */
+  .container-tres-las-retamas {
+    display: flex;
+    flex-direction: column; /* Por defecto en móvil, columna (texto primero, luego imagen) */
+    align-items: center;
+  }
+  
+  .contenido-las-retamas-dos {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  
+  
+  /* Estilos generales */
+  .seccion-tres-las-retamas {
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+  
+  .subtitle {
+    font-size: 2rem;
+  }
+  
+  /* Contenedor principal en móviles - contenido arriba y luego imagen */
+  .container-tres-las-retamas {
+    display: flex;
+    flex-direction: column; /* Dirección en columna por defecto */
+    align-items: center;
+  }
+  
+  .contenido-las-retamas-dos {
+    padding: 10px;
+    text-align: center;
+  }
+  .cfr-proyectos{
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+  }
+  
+  .card-proyectos{
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    height:250px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(8, 3, 3, 0.5);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 15px;
+  }
+  .card-figure{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+  }
+  .card-figure img{
+    width: 48px;
+  }
+  .container-proyectos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  
+  /* Timeline*/
+  .example-header {
+    background: #3D4351;
+    color: #FFF;
+    font-weight: 300;
+    padding: 3em 1em;
+    text-align: center;
+  }
+  .example-header h1 {
+    color: #FFF;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+  .example-header p {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 700;
+  }
+  
+  .container-fluid .row {
+    padding: 0 0 4em 0;
+  }
+  .container-fluid .row:nth-child(even) {
+    background: #F1F4F5;
+  }
+  
+  .example-title {
+    text-align: center;
+    margin-bottom: 60px;
+    padding: 3em 0;
+    border-bottom: 1px solid #E4EAEC;
+  }
+  .example-title p {
+    margin: 0 auto;
+    font-size: 16px;
+    max-width: 400px;
+  }
+  
+  /* Timeline Styles */
+  .timelinee {
+    line-height: 1.4em;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  .timelinee h1, .timelinee h2, .timelinee h3, .timelinee h4, .e h5, .timelinee h6 {
+    line-height: inherit;
+  }
+  
+  .timeline-item {
+    padding-left: 40px;
+    position: relative;
+  }
+  .timeline-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .timeline-info {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0 0 .5em 0;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  
+  .timeline-marker {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 15px;
+  }
+  .timeline-marker:before {
+    background: #ED920E;
+    border: 3px solid transparent;
+    border-radius: 100%;
+    content: "";
+    display: block;
+    height: 15px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 15px;
+    transition: background 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+  .timeline-marker:after {
+    content: "";
+    width: 3px;
+    background: #CCD5DB;
+    display: block;
+    position: absolute;
+    top: 24px;
+    bottom: 0;
+    left: 6px;
+  }
+  .timeline-item:last-child .timeline-marker:after {
+    content: none;
+  }
+  
+  .timeline-item:not(.period):hover .timeline-marker:before {
+    background: transparent;
+    border: 3px solid #FF6B6B;
+  }
+  
+  .timeline-content {
+    padding-bottom: 40px;
+  }
+  .timeline-content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .period {
+    padding: 0;
+  }
+  .period .timeline-info {
+    display: none;
+  }
+  .period .timeline-marker:before {
+    background: transparent;
+    width: 15px;
+    border: none;
+    border-radius: 0;
+    top: 0;
+    bottom: 30px;
+    position: absolute;
+    border-top: 3px solid #CCD5DB;
+    border-bottom: 3px solid #CCD5DB;
+  }
+  .period .timeline-marker:after {
+    content: "";
+    height: 32px;
+    top: auto;
+  }
+  .period .timeline-content {
+    padding: 40px 0 70px;
+  }
+  .period .timeline-title {
+    margin: 0;
+  }
+  
+  /* Timeline Split */
+  .timeline-split {
+    display: table;
+  }
+  .timeline-split .timeline-item {
+    display: table-row;
+    padding: 0;
+  }
+  .timeline-split .timeline-info, .timeline-split .timeline-marker, .timeline-split .timeline-content {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .timeline-split .timeline-marker {
+    position: relative;
+  }
+  .timeline-split .timeline-content {
+    padding-left: 30px;
+  }
+  .timeline-split .timeline-info {
+    padding-right: 30px;
+  }
+  .timeline-split .period .timeline-title {
+    position: relative;
+    left: -45px;
+  }
+  
+  /* Timeline Centered */
+  .timeline-centered {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .timeline-centered .timeline-item {
+    padding-bottom: 40px;
+    overflow: hidden;
+  }
+  .timeline-centered .timeline-marker {
+    position: absolute;
+    left: 50%;
+    margin-left: -7.5px;
+  }
+  .timeline-centered .timeline-info, .timeline-centered .timeline-content {
+    width: 50%;
+  }
+  .timeline-centered > .timeline-item:nth-child(odd) .timeline-info {
+    float: left;
+    text-align: right;
+    padding-right: 30px;
+  }
+  .timeline-centered > .timeline-item:nth-child(odd) .timeline-content {
+    float: right;
+    text-align: left;
+    padding-left: 30px;
+  }
+  .timeline-centered > .timeline-item:nth-child(even) .timeline-info {
+    float: right;
+    text-align: left;
+    padding-left: 30px;
+  }
+  .timeline-centered > .timeline-item:nth-child(even) .timeline-content {
+    float: left;
+    text-align: right;
+    padding-right: 30px;
+  }
+  .timeline-centered > .timeline-item.period .timeline-content {
+    float: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .timeline-centered .timeline-item.period {
+    padding: 50px 0 90px;
+  }
+  .timeline-centered .period .timeline-marker:after {
+    height: 30px;
+    bottom: 0;
+    top: auto;
+  }
+  .timeline-centered .period .timeline-title {
+    left: auto;
+  }
+  
+  /* Marker Outline */
+  .marker-outline .timeline-marker:before {
+    background: transparent;
+    border-color: #FF6B6B;
+  }
+  .marker-outline .timeline-item:hover .timeline-marker:before {
+    background: #FF6B6B;
+  }
+  
+  /* video las retamas*/
+  
+  .container-siete video{
+    width: 248px;
+  }
+  .container-siete{
+    display: flex;
+    justify-content: center;   
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .container-cards-colaborar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .card-colaborar{
+    background-color: white;
+    padding: 20px;
+    width: 250px;
+    height:250px;
+    border-radius: 20px;
+    margin: 20px;
+    border: 1px solid #ED920E;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 15px;
+  }
+  .contacto-img img{
+    width: 200px;
+  }
+  .contacto {
+    display: flex;
+    align-items: center; /* Alinea verticalmente los elementos */
+    justify-content: space-between; /* Añade espacio entre los elementos */
+  }
+  
+  .contacto-img {
+    margin-right: 20px; /* Añade espacio entre la imagen y el logo de Instagram */
+  }
+  
+  .contacto-social {
+    margin-right: 25px;
+    padding: 7px 10px;
+  }
+  
+  .contacto-social img {
+    margin-right: 10px;
+    width: 70px;/* Espacio entre el logo y el texto */
+  }
+  .direccion{
+    padding: 5px 10px;
+  }
+
+  .container-title{
+    line-height: 8px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.title{
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    padding: 20px;
+    margin-bottom:-31px;
+    margin-top: 48px;
+}
+.subtitle{
+    padding: 19px;
+    font-size: 2.3rem;
+    margin-top: 0px;
+    color: #ED920E;
+}
+.parrafo{
+    padding: 19px;
+    font-size: 1.5rem;
+}
+
+.parrafo-vision{
+    text-align: left;
+}
+.container-title{
+    line-height: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.seccion-dos{
+    padding: 5px;
+}
+.title-dos{
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    padding: 20px;
+    margin-bottom: 0px;
+    margin-top: 48px;
+    color: white;
+}
+.container-dos{ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.619) 80%, rgba(10, 2, 9, 0.241)), url('/assets/images/personalizada.jpg');
+    border-radius: 20px;
+    padding: 20px;
+}
+.imagen-uno img{
+    border-radius: 20px;
+    width: 500px;
+    padding: 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));;
+    
+}
+.imagen-uno::before {
+    content: '';
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); 
+    pointer-events: none; 
+}
+.parrafo-dos{
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-family: "Lato", sans-serif;
+}
+
+  /* footer*/
+  
+.footer-cfr{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 30px 30px 20px 30px;
+    color: #2f2f2f;
+    background-color: #0A375F;
+    border-top: 1px solid #e5e5e5;
+    color: whitesmoke;
+  }
+  
+  .footer-cfr > * {
+    flex:  1 100%;
+  }
+  
+  .footer-cfr__addr {
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+  }
+  
+  .footer-cfr__logo {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 1.5rem;
+  }
+  .footer-cfr__logo img{
+    width: 150px;
+  }
+  
+  .footer-cfr__addr h2 {
+    margin-top: 1.3em;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  .nav-cfr__title {
+    font-weight: 400;
+    font-size: 15px;
+  }
+  
+  .footer-cfr address {
+    font-style: normal;
+    color: #999;
+  }
+  
+  .footer-cfr__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    max-width: max-content;
+    background-color: rgb(33, 33, 33, 0.07);
+    border-radius: 100px;
+    color: #2f2f2f;
+    line-height: 0;
+    margin: 0.6em 0;
+    font-size: 1rem;
+    padding: 0 1.3em;
+  }
+  
+  .footer-cfr ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .footer-cfr li {
+    line-height: 2em;
+  }
+  
+  .footer-cfr a {
+    text-decoration: none;
+  }
+  
+  .footer-cfr__nav {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  .footer-cfr__nav > * {
+    flex: 1 50%;
+    margin-right: 1.25em;
+  }
+  
+  .nav-cfr__ul a {
+    color: #999;
+  }
+  
+  .nav-cfr__ul--extra {
+    column-count: 2;
+    column-gap: 1.25em;
+  }
+  
+  .legal-cfr {
+    display: flex;
+    flex-wrap: wrap;
+    color: #999;
+  }
+    
+  .legal__links {
+    display: flex;
+    align-items: center;
+  }
+  
+  .heart {
+    color: #2f2f2f;
+  }
+  
+  @media screen and (min-width: 24.375em) {
+    .legal .legal__links {
+      margin-left: auto;
+    }
+  }
+  
+  @media screen and (min-width: 40.375em) {
+    .footer__nav > * {
+      flex: 1;
+    }
+    
+    .nav__item--extra {
+      flex-grow: 2;
+    }
+    
+    .footer__addr {
+      flex: 1 0px;
+    }
+    
+    .footer__nav {
+      flex: 2 0px;
+    }
+  }
