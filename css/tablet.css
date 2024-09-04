@@ -159,18 +159,14 @@ figure, .contenido-las-retamas {
 .contenido-las-retamas {
   text-align: left; /* Cambia la alineación del texto a la izquierda para pantallas más grandes */
 }
-
 .container-tres-las-retamas {
-  flex-direction: row; /* Cambiamos a fila para tabletas y más grandes */
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: row-reverse; /* Imagen a la derecha, texto a la izquierda */
+}
+
+.container-tres-las-retamas figure {
+  width: 50%; /* La imagen ocupa la mitad del ancho */
 }
 
 .contenido-las-retamas-dos {
-  width: 48%;
-  text-align: left; /* Alineamos el texto a la izquierda */
-}
-
-figure {
-  width: 48%; /* La imagen ocupará el 48% del ancho */
+  width: 50%; /* El texto ocupa la otra mitad del ancho */
 }
