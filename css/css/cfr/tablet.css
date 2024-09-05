@@ -1,20 +1,39 @@
-* Nosotros */
 .menu-icon-cfr{
-    margin-left: 190px;
-  }
+  display: none;
+}
+.navbar-links-cfr{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;   
+  gap: 20px;
+  list-style: none;
+  margin: 0 20px;
+  color: #fff;
+}
+.navbar-links-cfr li a:hover {
+  color:#ED920E;
+}
+.navbar-links-cfr li a img{
+display: flex;
+width: 20px;
+}
+.li a img {
+transition: transform 0.4s ease; /* Para un efecto suave */
+}
 
-  .open,
-  .close{
-    display: none;
-  }
-  .navbar-links-cfr{
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    align-items: center;
-    padding: 0 10px;
-  }
+li a:hover img {
+transform: scale(2.1); /* Aumenta ligeramente el tamaño del ícono */
+}
 
+li a.instagram:hover img {
+filter: invert(40%) sepia(70%) saturate(700%) hue-rotate(330deg) brightness(90%) contrast(90%);
+/* Cambia los valores de `filter` para crear el efecto de color deseado para Instagram */
+}
+
+li a.facebook:hover img {
+filter: invert(31%) sepia(95%) saturate(2919%) hue-rotate(175deg) brightness(89%) contrast(86%);
+/* Cambia los valores de `filter` para crear el efecto de color deseado para Facebook */
+}
 
 
 
@@ -57,4 +76,23 @@
     .contenedor {
       justify-content: flex-start; /* Cambia el comportamiento en tabletas */
     }
+  }
+
+  .footer-cfr {
+    flex-direction: row; /* Alinea los elementos en una fila */
+  }
+
+  .footer-cfr__addr {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+  }
+
+  .footer-cfr__logo {
+    margin-right: 1rem; /* Espacio entre el logo y el contacto */
+  }
+
+  .footer-cfr__nav {
+    flex: 1;
   }

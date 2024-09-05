@@ -4,27 +4,22 @@
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100..900&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Lato', sans-serif;
-    background-color: #e0dede;
-    color: #333;
-    line-height: 1.2;
-    font-size: 0.9rem; 
-    text-decoration: none;  
+body {  
+  font-family: 'Lato', sans-serif;
+  background-color: #E0DEDE;
+  color: #bb1111;
+  line-height: 1.2;
+  font-size: 0.9rem; 
+  text-decoration: none;  
 }
-:root {
-    --white: #fff;
-    --black: #000;
-    --primary: #d4a024;
-    --gray: #616161;
-  }
-  a {
-    text-decoration: none; /* Quita el subrayado */
-    color: inherit; /* Hereda el color del elemento padre */
-  }
+
+a {
+  text-decoration: none; /* Quita el subrayado */
+  color: inherit; /* Hereda el color del elemento padre */
+}

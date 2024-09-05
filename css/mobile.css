@@ -522,7 +522,7 @@ display: none;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    padding: 35px;
     background-color: white;
   }
   .carousel-dos {
@@ -743,6 +743,7 @@ display: none;
   .parrafo h3{
     font-size: 1.5rem;
     padding: 20px 6px;
+    margin-top: 70px;
   }
   .parrafo p{
     padding: 6px 37px;

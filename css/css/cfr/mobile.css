@@ -45,7 +45,7 @@
     text-decoration: none;
     color: whitesmoke;
     font-family: "Roboto", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -100,7 +100,7 @@
 
 
 .header-las-retamas {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.319)), url('/assets/images/oliva.jpeg'); /* Imagen de fondo */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.571), rgba(0, 0, 0, 0.582)), url('/assets/images/oliva.jpeg'); /* Imagen de fondo */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -248,7 +248,9 @@
     align-items: center;
     padding: 20px;
   }
-  
+  .card-colaborar h3{
+    display: flex;
+  }
   
   /* Timeline*/
   .example-header {
@@ -565,13 +567,23 @@
     margin-top: 0px;
     color: #ED920E;
 }
+.subtitle-cfr{
+    padding: 19px;
+    font-size: 3rem;
+    margin-top: 0px;
+    color: #ED920E;
+}
 .parrafo{
     padding: 19px;
     font-size: 1.5rem;
+    
+    font-family: 'Lato', sans-serif;
 }
 
 .parrafo-vision{
     text-align: left;
+    
+    font-family: 'Lato', sans-serif;
 }
 .container-title{
     line-height: 18px;
@@ -618,6 +630,38 @@
     font-size: 1.5rem;
     font-family: "Lato", sans-serif;
 }
+.parrafo-cfr{
+    font-family: "Lato", sans-serif;
+
+}
+.container-cfr  {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  height: 400px;
+  width: 600px;
+  background: #f2f2f2;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 20px 8px #d0d0d0;
+}
+
+.content-cfr {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  text-align: justify;
+  color: black;
+  padding: 40px;
+  font-family: 'Merriweather', serif;
+}
+.timeline-section-dos-cfr{
+  background-color: white;
+  border-radius: 20px;
+}
+
 
   /* footer*/
   
@@ -697,6 +741,7 @@
   .footer-cfr__nav {
     display: flex;
     flex-flow: row wrap;
+    align-items: flex-end;
   }
   
   .footer-cfr__nav > * {
