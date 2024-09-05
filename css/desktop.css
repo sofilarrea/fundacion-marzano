@@ -5,6 +5,11 @@
     .container-cinco{
         justify-content: space-evenly;
     }
+    .container-dos,
+    .container-tres{
+      background-position: unset;
+
+    }
 }
 @media screen and (min-width: 2560px){
   .title,
@@ -121,4 +126,7 @@
 }
 .parrafo-cfr{
  padding: 25px;
+}
+.container-tres{
+  background-position:unset;
 }

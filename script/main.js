@@ -245,3 +245,4 @@ var timelineSwiper = new Swiper ('.timeline .swiper-container', {
       }
     }
   });
+  

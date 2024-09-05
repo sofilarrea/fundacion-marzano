@@ -302,7 +302,7 @@ display: none;
     background-size: cover;
     background-position: center; 
     position: relative;
-    background-image: radial-gradient(rgba(0, 0, 0, 0.755), rgba(10, 2, 9, 0.636)), url('/assets/images/chicos.jpg');
+    background-image: radial-gradient(rgba(0, 0, 0, 0.755), rgba(10, 2, 9, 0.636)), url('/assets/images/fundacion.jpeg');
     border-radius: 20px;
     padding: 20px;
 }

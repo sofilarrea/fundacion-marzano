@@ -59,9 +59,16 @@ li a.facebook:hover img {
     display: flex;
     justify-content: center;
 }
+.container-cinco{
+  justify-content: space-evenly;
+}
 
-
-
+.uno h3{
+  font-size: 3rem;
+}
+.dos h3 {
+  font-size: 3rem;
+}
 
 
 /* Nosotros */
