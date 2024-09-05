@@ -1,0 +1,17 @@
+.foto-las-retamas img{
+    width: 450px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+.parrafo-mision,
+.parrafo-vision{
+    font-size: 1.2rem;
+}
+.timeline-info span{
+    font-size: 1.2rem;
+}
+.parrafo-cfr{
+    font-size: 1.2rem;
+}

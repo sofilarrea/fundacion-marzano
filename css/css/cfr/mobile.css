@@ -132,6 +132,14 @@
     font-family: "Playfair Display", serif;
     margin-top: -13px;
   }
+  .subtitle-testimonio{
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    margin-top: 0px;
+    color: #ED920E;
+    display: flex;
+    justify-content: center;
+  }
   
   .seccion-dos-las-retamas {
     padding: 20px;
