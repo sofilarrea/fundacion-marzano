@@ -130,3 +130,59 @@
 .container-tres{
   background-position:unset;
 }
+
+
+/* carusel Nosotros */
+.galeria-fotos {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+  height: 675px; /* Ajusta esta altura según tus necesidades */
+}
+
+.carousel-container {
+  position: relative;
+  height: 100%;
+}
+
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  display: flex;
+  align-items: center; /* Centra la imagen verticalmente */
+  justify-content: center; /* Centra la imagen horizontalmente */
+}
+
+.carousel-slide img {
+  width: auto; /* Mantiene la relación de aspecto */
+  height: 100%; /* Ajusta la altura de la imagen */
+  object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
+}
+
+.carousel-prev, .carousel-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.carousel-prev {
+  left: 10px;
+}
+
+.carousel-next {
+  right: 10px;
+}

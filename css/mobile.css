@@ -1222,7 +1222,7 @@ display: none;
   max-width: 100%;
   margin: auto;
   overflow: hidden;
-  height: 675px; /* Ajusta esta altura según tus necesidades */
+  height: 300px; /* Ajusta esta altura para móviles */
 }
 
 .carousel-container {
@@ -1245,8 +1245,8 @@ display: none;
 }
 
 .carousel-slide img {
-  width: auto; /* Mantiene la relación de aspecto */
-  height: 100%; /* Ajusta la altura de la imagen */
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  height: auto; /* Mantiene la relación de aspecto */
   object-fit: cover; /* Asegura que la imagen cubra el contenedor sin deformarse */
 }
 
@@ -1270,7 +1270,6 @@ display: none;
 .carousel-next {
   right: 10px;
 }
-
 /* Las Retamas Page */
 
 .header-las-retamas {
