@@ -119,6 +119,10 @@ li a.facebook:hover img {
 
 
   /* Ideario */
+  .subtitle-ideario{
+    display: flex;
+    justify-content: center;
+  }
   .ideario{
     display: flex;
     flex-direction: column;
@@ -150,3 +154,6 @@ li a.facebook:hover img {
 }
 
 
+.carousel-slide img{
+  height: 310px;
+}
