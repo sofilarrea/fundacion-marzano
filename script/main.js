@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
     
-    function handleScroll() {
+    function handleScroll() {rev
         if (window.scrollY > 60) { // Ajusta el valor según cuando quieres que cambie el color de fondo
             navbar.classList.add('scrolled');
         } else {
@@ -172,55 +172,33 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
 document.addEventListener('DOMContentLoaded', () => {
     const slides = document.querySelectorAll('.carousel-slide');
-    const nextBtn = document.querySelector('.carousel-next');
-    const prevBtn = document.querySelector('.carousel-prev');
-    const dots = document.querySelectorAll('.dot');
-    let currentIndex = 0;
-    const slideInterval = 3000; // Intervalo de 1000 milisegundos (1 segundo)
+    const totalSlides = slides.length;
+    let index = 0;
 
-    function showSlide(index) {
-        const wrapper = document.querySelector('.carousel-wrapper');
-        const width = slides[0].clientWidth;
-        wrapper.style.transform = `translateX(${-index * width}px)`;
-        currentIndex = index;
+    const updateCarousel = () => {
+        const newTransformValue = -100 * index;
+        document.querySelector('.carousel-wrapper').style.transform = `translateX(${newTransformValue}%)`;
+    };
 
-        // Actualizar los puntos
-        dots.forEach(dot => dot.classList.remove('active'));
-        dots[currentIndex].classList.add('active');
-    }
+    const nextSlide = () => {
+        index = (index + 1) % totalSlides;
+        updateCarousel();
+    };
 
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slides.length;
-        showSlide(currentIndex);
-    }
+    const prevSlide = () => {
+        index = (index - 1 + totalSlides) % totalSlides;
+        updateCarousel();
+    };
 
-    function prevSlide() {
-        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
-        showSlide(currentIndex);
-    }
+    // Auto-slide every 3 seconds
+    setInterval(nextSlide, 3000);
 
-    nextBtn.addEventListener('click', nextSlide);
-    prevBtn.addEventListener('click', prevSlide);
-
-    // Puntos de control
-    dots.forEach((dot, index) => {
-        dot.addEventListener('click', () => {
-            showSlide(index);
-        });
-    });
-
-    // Mostrar la primera diapositiva
-    showSlide(currentIndex);
-
-    // Hacer que el carrusel pase automáticamente cada 1000 milisegundos
-    setInterval(() => {
-        nextSlide();
-    }, slideInterval);
+    // Optional: Add event listeners for manual control
+    document.querySelector('.carousel-next').addEventListener('click', nextSlide);
+    document.querySelector('.carousel-prev').addEventListener('click', prevSlide);
 });
-
 
 
 
