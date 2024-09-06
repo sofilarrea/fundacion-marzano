@@ -1217,7 +1217,17 @@ display: none;
 }
 
 /* carousel nosotros*/
+#carouselExampleIndicators {
+  max-width: 800px; /* Ajustar el ancho máximo */
+  height: 700px; /* Ajustar la altura máxima */
+  margin: 0 auto; /* Centramos el carrusel */
+}
 
+/* Aseguramos que las imágenes se ajusten correctamente al nuevo tamaño del carrusel */
+.carousel-item img {
+  height: 100%; /* La imagen ocupa toda la altura del carrusel */
+  object-fit: cover; /* Ajustar las imágenes para que mantengan su proporción */
+}
 /* Las Retamas Page */
 
 .header-las-retamas {
