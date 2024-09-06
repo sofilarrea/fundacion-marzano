@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
     
-    function handleScroll() {rev
+    function handleScroll() {
         if (window.scrollY > 60) { // Ajusta el valor según cuando quieres que cambie el color de fondo
             navbar.classList.add('scrolled');
         } else {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
-    const items = document.querySelectorAll('.carousel-item');
+    const items = document.querySelectorAll('.carousel-itemm');
     const totalItems = items.length;
 
     function updateCarousel() {
@@ -172,35 +172,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-document.addEventListener('DOMContentLoaded', () => {
-    const slides = document.querySelectorAll('.carousel-slide');
-    const totalSlides = slides.length;
-    let index = 0;
-
-    const updateCarousel = () => {
-        const newTransformValue = -100 * index;
-        document.querySelector('.carousel-wrapper').style.transform = `translateX(${newTransformValue}%)`;
-    };
-
-    const nextSlide = () => {
-        index = (index + 1) % totalSlides;
-        updateCarousel();
-    };
-
-    const prevSlide = () => {
-        index = (index - 1 + totalSlides) % totalSlides;
-        updateCarousel();
-    };
-
-    // Auto-slide every 3 seconds
-    setInterval(nextSlide, 3000);
-
-    // Optional: Add event listeners for manual control
-    document.querySelector('.carousel-next').addEventListener('click', nextSlide);
-    document.querySelector('.carousel-prev').addEventListener('click', prevSlide);
-});
-
-
 
 
 
@@ -224,3 +195,5 @@ var timelineSwiper = new Swiper ('.timeline .swiper-container', {
     }
   });
   
+
+   // Selecciona los botones de proyectos y la superposición

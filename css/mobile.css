@@ -10,7 +10,7 @@
     transition: transform 0.5s ease-in-out;
 }
 
-.carousel-item {
+.carousel-itemm {
     min-width: 100%;
     box-sizing: border-box;
     position: relative;
@@ -21,19 +21,19 @@
 
 }
 
-.carousel-item img {
+.carousel-itemm img {
     width: 100%;
     height: 100vh;
     object-fit: cover;
 }
-.carousel-item::before {
+.carousel-itemm::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0.319));
+    background: linear-gradient(rgba(0, 0, 0, 0.497), rgba(0, 0, 0, 0.442));
     z-index: 1;
 }
 
@@ -1217,45 +1217,6 @@ display: none;
 }
 
 /* carousel nosotros*/
-.garia-fotos{
-  height: 100vh;
-  display: flex;
-  justify-content: center;  
-  align-items: center;
-  flex-direction: column;
-  max-width: 1000%;
-}
-.gallery {
-  --s: 246px; /* control the size */
-  --g: 10px;  /* control the gap */
-  --f: 1;   /* control the scale factor */
-  
-  display: grid;
-  gap: var(--g);
-  width: calc(3*var(--s) + 2*var(--g));
-  aspect-ratio: 1;
-  grid-template-columns: repeat(3,auto);
-}
-
-.gallery > img {
-  width: 0;
-  height: 0;
-  min-height: 100%;
-  min-width: 100%;
-  object-fit: cover;
-  cursor: pointer;
-  filter: grayscale(80%);
-  transition: .35s linear;
-}
-
-.gallery img:hover{
-  filter: grayscale(0);
-  width:  calc(var(--s)*var(--f));
-  height: calc(var(--s)*var(--f));
-}
-
-
-
 
 /* Las Retamas Page */
 
@@ -1293,7 +1254,7 @@ display: none;
   margin-top: -13px;
 }
 .subtitle-ideario{
-  margin: 15px 0;
+   margin: 15px 0;
   padding: 0px 23px;
   font-size: 2.3rem;
   margin-top: 0px;
