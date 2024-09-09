@@ -113,6 +113,10 @@
 
   .container-ideario .card {
     width: 100%;
+
+  }
+  .container-dos{
+    height: 600px;
   }
 }
 
@@ -129,6 +133,7 @@
 }
 .container-tres{
   background-position:unset;
+  height: 600px;
 }
 .title-centro{
   text-align: center;

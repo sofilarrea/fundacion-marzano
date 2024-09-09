@@ -157,3 +157,7 @@ li a.facebook:hover img {
 .carousel-slide img{
   height: 310px;
 }
+.container-dos,
+.container-tres{
+  height: 600px;
+}
