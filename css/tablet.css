@@ -17,6 +17,81 @@
   display: flex;
   width: 20px;
 }
+/* Dropdown Styles */
+.navbar-links .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-links .dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  padding: 10px 0;
+  margin: 0;
+  list-style-type: none;
+  min-width: 180px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Sombra suave */
+  border-radius: 8px;
+  z-index: 1000;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.navbar-links .dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navbar-links .dropdown-menu li {
+  padding: 12px 20px;
+  white-space: nowrap;
+}
+
+.navbar-links .dropdown-menu li a {
+  color: #333;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-links .dropdown-menu li a:hover {
+  background-color: #f7c10e; /* Un color dorado cuando se pasa por encima */
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Styling for Active Dropdown Link */
+.navbar-links .dropdown-toggle {
+  color: #fff;
+  cursor: pointer;
+}
+
+.navbar-links .dropdown-toggle:hover {
+  color: #f7c10e; /* Cambia el color al dorado cuando se pasa por encima */
+}
+
+/* Extra Styling for Dropdown in Mobile Views */
+@media (max-width: 768px) {
+  .navbar-links .dropdown-menu {
+      position: static;
+      box-shadow: none;
+      transform: none;
+      opacity: 1;
+      background-color: transparent;
+  }
+  
+  .navbar-links .dropdown-menu li {
+      padding: 8px 16px;
+  }
+}
+
+
+
 .li a img {
   transition: transform 0.4s ease; /* Para un efecto suave */
 }

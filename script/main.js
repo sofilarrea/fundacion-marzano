@@ -197,3 +197,23 @@ var timelineSwiper = new Swiper ('.timeline .swiper-container', {
   
 
    // Selecciona los botones de proyectos y la superposición
+   document.addEventListener("DOMContentLoaded", function() {
+    // Seleccionamos el toggle del dropdown y el menú
+    const dropdownToggle = document.querySelector(".dropdown-toggle");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+
+    // Añadimos un evento de clic al toggle
+    dropdownToggle.addEventListener("click", function(event) {
+        event.preventDefault(); // Prevenimos el comportamiento predeterminado del enlace
+
+        // Alternamos la clase 'active' para mostrar u ocultar el menú
+        dropdownMenu.classList.toggle("active");
+    });
+
+    // Opcional: cerrar el dropdown al hacer clic fuera de él
+    document.addEventListener("click", function(event) {
+        if (!dropdownToggle.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.classList.remove("active"); // Ocultamos el menú si se hace clic fuera
+        }
+    });
+});
