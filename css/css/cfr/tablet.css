@@ -1,7 +1,9 @@
-.menu-icon-cfr{
+/* Estilos Generales */
+.menu-icon-cfr {
   display: none;
 }
-.navbar-links-cfr{
+
+.navbar-links-cfr {
   display: flex;
   justify-content: space-between;
   align-items: center;   
@@ -10,89 +12,86 @@
   margin: 0 20px;
   color: #fff;
 }
+
 .navbar-links-cfr li a:hover {
-  color:#ED920E;
+  color: #ED920E;
 }
-.navbar-links-cfr li a img{
-display: flex;
-width: 20px;
-}
-.li a img {
-transition: transform 0.4s ease; /* Para un efecto suave */
+
+.navbar-links-cfr li a img {
+  display: flex;
+  width: 20px;
+  transition: transform 0.4s ease; /* Efecto suave */
 }
 
 li a:hover img {
-transform: scale(2.1); /* Aumenta ligeramente el tamaño del ícono */
+  transform: scale(2.1); /* Aumenta ligeramente el tamaño del ícono */
 }
 
 li a.instagram:hover img {
-filter: invert(40%) sepia(70%) saturate(700%) hue-rotate(330deg) brightness(90%) contrast(90%);
-/* Cambia los valores de `filter` para crear el efecto de color deseado para Instagram */
+  filter: invert(40%) sepia(70%) saturate(700%) hue-rotate(330deg) brightness(90%) contrast(90%);
+  /* Efecto de color personalizado para Instagram */
 }
 
 li a.facebook:hover img {
-filter: invert(31%) sepia(95%) saturate(2919%) hue-rotate(175deg) brightness(89%) contrast(86%);
-/* Cambia los valores de `filter` para crear el efecto de color deseado para Facebook */
+  filter: invert(31%) sepia(95%) saturate(2919%) hue-rotate(175deg) brightness(89%) contrast(86%);
+  /* Efecto de color personalizado para Facebook */
 }
-
-
 
 /* Las Retamas */
 .container-dos-las-retamas {
-    flex-direction: row; /* Coloca los elementos uno al lado del otro */
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  figure, .contenido-las-retamas {
-    width: 48%; /* Cada uno ocupa casi la mitad del espacio disponible */
-  }
-  
-  .contenido-las-retamas {
-    text-align: left; /* Cambia la alineación del texto a la izquierda para pantallas más grandes */
-  }
-  .container-tres-las-retamas {
-    flex-direction: row-reverse; /* Imagen a la derecha, texto a la izquierda */
-  }
-  
-  .container-tres-las-retamas figure {
-    width: 50%; /* La imagen ocupa la mitad del ancho */
-  }
-  
-  .contenido-las-retamas-dos {
-    width: 50%; /* El texto ocupa la otra mitad del ancho */
-  }
-  .container-proyectos {
-    grid-template-columns: 1fr 1fr;
-  } 
-  
-  .foto-las-retamas img {
-    margin: 0;
-    padding: 10px;
-    width: 371px;
-  }
-  
-  .contacto{
-    .contenedor {
-      justify-content: flex-start; /* Cambia el comportamiento en tabletas */
-    }
-  }
+  display: flex;
+  flex-direction: row; /* Coloca los elementos uno al lado del otro */
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .footer-cfr {
-    flex-direction: row; /* Alinea los elementos en una fila */
-  }
+figure, .contenido-las-retamas {
+  width: 48%; /* Cada uno ocupa casi la mitad del espacio disponible */
+}
 
-  .footer-cfr__addr {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+.contenido-las-retamas {
+  text-align: left; /* Alineación del texto a la izquierda */
+}
 
-  }
+.container-tres-las-retamas {
+  display: flex;
+  flex-direction: row-reverse; /* Imagen a la derecha, texto a la izquierda */
+}
 
-  .footer-cfr__logo {
-    margin-right: 1rem; /* Espacio entre el logo y el contacto */
-  }
+.container-tres-las-retamas figure,
+.contenido-las-retamas-dos {
+  width: 50%; /* La imagen y el texto ocupan la mitad del ancho cada uno */
+}
 
-  .footer-cfr__nav {
-    flex: 1;
-  }
+.container-proyectos {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas en tablet y mayores */
+  gap: 20px;
+}
+
+.foto-las-retamas img {
+  margin: 0;
+  padding: 10px;
+  width: 371px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  transition: all 0.3s;
+}
+
+/* Contacto */
+.contacto .contenedor {
+  display: flex;
+  justify-content: flex-start; /* Alineación en tabletas */
+}
+
+/* Footer */
+.footer-cfr {
+  display: flex;
+  flex-direction: row; /* Alinea los elementos en una fila */
+}
+
+.footer-cfr__addr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;

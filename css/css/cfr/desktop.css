@@ -1,3 +1,4 @@
+@media screen and (min-width: 1024px){
 .foto-las-retamas img{
     width: 450px;
     object-fit: cover;
@@ -22,4 +23,12 @@
   .parrafo-mision, .parrafo-vision,
       .parrafo-cfr {
     font-size: 1.2rem;
+}
+}
+@media screen and (min-width: 1440px){
+.container-proyectos {
+    display: flex;
+    flex-direction: row;
+    
+  } 
 }
