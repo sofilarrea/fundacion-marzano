@@ -11,14 +11,14 @@
     color: #fff;
 }
 .navbar-links li a {
-  font-size: 10px;
+  font-size: 16px;
 }
 .navbar-links li a:hover {
     color:#ED920E;
 }
 .navbar-links li a img{
   display: flex;
-  width: 20px;
+  width: 25px;
 }
 /* Dropdown Styles */
 .navbar-links .dropdown {
@@ -160,8 +160,7 @@ li a.facebook:hover img {
   }
   .navbar-links{
     display: flex;
-    list-style: none;
-    gap: 20px;
+    list-style: none;  
     align-items: center;
     padding: 0 10px;
   }
