@@ -194,7 +194,9 @@ li a.facebook:hover img {
     width: 600px;
   }
   
-
+.parrafo p{
+  font-size: 20px;
+}
 
   /* Ideario */
   .subtitle-ideario{
