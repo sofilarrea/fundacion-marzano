@@ -20,52 +20,52 @@
 .navbar-links-cfr li a img {
   display: flex;
   width: 20px;
-  transition: transform 0.4s ease; /* Efecto suave */
+  transition: transform 0.4s ease; 
 }
 
 li a:hover img {
-  transform: scale(2.1); /* Aumenta ligeramente el tamaño del ícono */
+  transform: scale(2.1); 
 }
 
 li a.instagram:hover img {
   filter: invert(40%) sepia(70%) saturate(700%) hue-rotate(330deg) brightness(90%) contrast(90%);
-  /* Efecto de color personalizado para Instagram */
+  
 }
 
 li a.facebook:hover img {
   filter: invert(31%) sepia(95%) saturate(2919%) hue-rotate(175deg) brightness(89%) contrast(86%);
-  /* Efecto de color personalizado para Facebook */
+  
 }
 
 /* Las Retamas */
 .container-dos-las-retamas {
   display: flex;
-  flex-direction: row; /* Coloca los elementos uno al lado del otro */
+  flex-direction: row; 
   align-items: center;
   justify-content: space-between;
 }
 
 figure, .contenido-las-retamas {
-  width: 48%; /* Cada uno ocupa casi la mitad del espacio disponible */
+  width: 48%; 
 }
 
 .contenido-las-retamas {
-  text-align: left; /* Alineación del texto a la izquierda */
+  text-align: left;
 }
 
 .container-tres-las-retamas {
   display: flex;
-  flex-direction: row-reverse; /* Imagen a la derecha, texto a la izquierda */
+  flex-direction: row-reverse;
 }
 
 .container-tres-las-retamas figure,
 .contenido-las-retamas-dos {
-  width: 50%; /* La imagen y el texto ocupan la mitad del ancho cada uno */
+  width: 50%; 
 }
 
 .container-proyectos {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Dos columnas en tablet y mayores */
+  grid-template-columns: 1fr 1fr; 
   gap: 20px;
 }
 
@@ -82,16 +82,17 @@ figure, .contenido-las-retamas {
 /* Contacto */
 .contacto .contenedor {
   display: flex;
-  justify-content: flex-start; /* Alineación en tabletas */
+  justify-content: flex-start; 
 }
 
 /* Footer */
 .footer-cfr {
   display: flex;
-  flex-direction: row; /* Alinea los elementos en una fila */
+  flex-direction: row; 
 }
 
 .footer-cfr__addr {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
