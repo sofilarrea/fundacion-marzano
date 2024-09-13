@@ -262,7 +262,7 @@ display: none;
 }
 .title{
     font-size: 2rem;
-    font-family: "Playfair Display", serif;
+    font-family: "Lato", serif;
     padding: 20px;
     margin-bottom: 0px;
     margin-top: 48px;
@@ -272,6 +272,7 @@ display: none;
     font-size: 2.3rem;
     margin-top: 0px;
     color: #ED920E;
+    font-size: 2.3rem;
 }
 .parrafo{
     padding: 19px;
@@ -766,7 +767,7 @@ display: none;
   } */
   .subtitle{
     margin: 15px 0;
-    padding: 10px 23px;
+    padding: 20px 23px;
     font-size: 2.3rem;
     margin-top: 0px;
     color: #ED920E;
@@ -1292,7 +1293,7 @@ display: none;
 }
 
 .subtitle {
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-family: "Playfair Display", serif;
   margin-top: -13px;
 }
@@ -1338,13 +1339,13 @@ display: none;
  margin-bottom: 20px;
 }
 
-.title {
+/* .title {
   font-size: 1.5rem;
 }
 
 .subtitle {
   font-size: 2rem;
-}
+} */
 
 /* Contenedor para la imagen y el contenido */
 .container-tres-las-retamas {
@@ -1364,14 +1365,14 @@ display: none;
 .seccion-tres-las-retamas {
   padding: 20px;
 }
-
+/* 
 .title {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .subtitle {
   font-size: 2rem;
-}
+} */
 
 /* Contenedor principal en móviles - contenido arriba y luego imagen */
 .container-tres-las-retamas {

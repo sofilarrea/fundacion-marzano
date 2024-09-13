@@ -24,6 +24,7 @@
 .navbar-links .dropdown {
   position: relative;
   display: inline-block;
+  top: 7%;
 }
 
 .navbar-links .dropdown-menu {
