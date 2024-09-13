@@ -1153,3 +1153,152 @@ background-color: #0A375F; /* Cambia el color de fondo cuando está abierto */
 border-left: 4px solid #ED920E;
 ; /* Agrega un borde o algún estilo especial */
 }
+.parrafo-cfr  a {
+  color: #0A375F;
+}
+/* Time line */
+.timeline{
+  position: relative;
+  max-width: 1200px;
+  margin: 100px auto;
+}
+.containerr{
+  padding: 10px 50px;
+  position: relative;
+  width: 50%;
+  animation: movedown 1s linear forwards;
+  opacity: 0;
+}
+@keyframes movedown {
+  0%{
+    transform: translateY(-30px);
+    opacity: 1;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.containerr:nth-child(1){
+ animation-delay: 0s;
+}
+.containerr:nth-child(2){
+  animation-delay: 1s;
+ }
+ .containerr:nth-child(3){
+  animation-delay: 2s;
+ }
+  .containerr:nth-child(4){
+    animation-delay: 3s;
+  }
+  .containerr:nth-child(5){
+    animation-delay: 4s;
+  }
+  .containerr:nth-child(6){
+    animation-delay: 5s;
+  }
+  .containerr:nth-child(7){
+    animation-delay: 6s;
+  }
+  .containerr:nth-child(8){
+    animation-delay: 7s;
+  }
+  .containerr:nth-child(9){
+    animation-delay: 8s;
+  }
+  .containerr:nth-child(10){
+    animation-delay: 9s;
+  }
+  .containerr:nth-child(11){
+    animation-delay: 10s;
+  }
+.text-box{
+  padding: 20px 30px;
+  background: #fff;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+.left-container{
+ left: 0;
+}
+.right-container{
+  left: 50%;
+}
+.containerr img {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  right: -20px;
+  top: 32px;
+  z-index: 10;
+}
+.right-container img{
+  left: -20px;
+}
+.timeline::after{
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 50%;
+  margin-left: -3px;
+  z-index: -1;
+  animation: moveline 6s linear forwards;
+}
+@keyframes moveline {
+  0%{
+    height: 0;
+  }
+  100%{
+    height: 100%;
+  }
+}
+.text-box h2{
+  font-weight: 600;
+}
+.text-box small{
+  display: inline-block;
+  margin-bottom: 15px;
+}
+@media screen  and (max-width: 600px){
+  .timeline{
+    margin: 50px auto;
+  }
+  .timeline::after{
+   left: 31px;
+  }
+  .containerr{
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 25px;
+  }
+  .text-box{
+    font-size: 13px;
+  }
+  .text-box small{
+    margin-bottom: 10px;
+  }
+  .right-container{
+    left: 0;
+  }
+  .left-container img , .right-container img{
+    left: 10px;
+  }
+  .left-container-arrow,
+  .right-container-arrow{
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    left: 65px;
+    position: absolute;
+    top: 36px;
+
+}
+.date{
+  font-size: 1.1rem;
+  color:#ED920E;
+  font-weight: bold;
+}}
