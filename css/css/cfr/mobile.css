@@ -125,8 +125,18 @@
     margin-top: 0px;
     color: #ED920E;
     font-family: "Playfair Display", serif;
+    display: flex;
+    justify-content: center;
+    
   }
-  
+  .subtitle-vision{
+    margin: 15px 0;
+    padding: 0px 23px;
+    font-size: 2.3rem;
+    margin-top: 0px;
+    color: #ED920E;
+    font-family: "Playfair Display", serif;
+  }
   .subtitle {
     font-size: 2rem;
     font-family: "Playfair Display", serif;
@@ -571,7 +581,7 @@
     color: #333333;
 }
 .subtitle{
-    padding: 19px;
+    padding: 33px;
     font-size: 2.3rem;
     margin-top: 0px;
     color: #ED920E;
