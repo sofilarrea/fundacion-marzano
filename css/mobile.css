@@ -209,6 +209,11 @@ display: none;
   flex-direction: column;
   justify-content: center;
 }
+.dropdown-toggle{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
 .hero-content{
     display: flex;
     justify-content: center;
