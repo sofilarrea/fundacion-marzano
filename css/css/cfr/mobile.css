@@ -153,6 +153,8 @@
   
   .seccion-dos-las-retamas {
     padding: 20px;
+    background-color: white;
+    border-radius: 20px;
   }
   
   .container-dos-las-retamas {
@@ -175,6 +177,9 @@
   /* Estilos básicos para la sección */
   .seccion-tres-las-retamas {
     padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 30px auto;
   }
   
   .container-title {
@@ -228,7 +233,8 @@
     text-align: center;
   }
   .cfr-proyectos{
-        display: flex;
+      margin: 44px;
+      display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
@@ -598,6 +604,8 @@
   font-size: 2.3rem;
   margin-top: 0px;
   color: #ED920E;
+  font-family: "Playfair Display", serif;
+
 }
 .subtitle-cfr{
     padding: 19px;
@@ -665,7 +673,7 @@
 .parrafo-cfr{
     font-family: "Lato", sans-serif;
     padding: 0 37px;
-
+    margin-bottom: 44px;
 }
 .container-cfr  {
   position: absolute;
