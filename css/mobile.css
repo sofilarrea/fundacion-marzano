@@ -776,12 +776,12 @@ display: none;
     color: #ED920E;
     font-family: "Playfair Display", serif;
   }
-  .parrafo h3{
+ /*  .parrafo h3{
     font-size: 1.5rem;
     padding: 20px 6px;
     margin-top: 70px;
     color: #ED920E;
-  }
+  } */
   .parrafo p{
     padding: 6px 37px;
     font-size: 1.1rem;

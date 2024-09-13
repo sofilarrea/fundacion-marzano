@@ -604,8 +604,18 @@
   font-size: 2.3rem;
   margin-top: 0px;
   color: #ED920E;
-  font-family: "Playfair Display", serif;
+  font-family: "Lato", serif;
 
+}
+.subtitleee{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 41px 38px;
+  font-size: 2.3rem;
+  margin-top: 0px;
+  color: #ED920E;
+  font-family: "Lato", serif;
 }
 .subtitle-cfr{
     padding: 19px;
@@ -620,11 +630,13 @@
     font-family: 'Lato', sans-serif;
 }
 
-.parrafo-vision{
+.parrafo-vision,
+.parrafo-mision{
     text-align: left;
-    
+    font-size: 1.5rem;
     font-family: 'Lato', sans-serif;
 }
+
 .container-title{
     line-height: 18px;
     display: flex;
@@ -674,6 +686,7 @@
     font-family: "Lato", sans-serif;
     padding: 0 37px;
     margin-bottom: 44px;
+    font-size: 1.5rem;
 }
 .container-cfr  {
   position: absolute;
@@ -1308,3 +1321,27 @@ border-left: 4px solid #ED920E;
   color:#ED920E;
   font-weight: bold;
 }}
+
+.button{
+  background-color: #27642E; 
+  color: white; 
+  border: none; 
+  border-radius: 12px; 
+  padding: 12px 24px; 
+  font-size: 16px; 
+  font-weight: bold; 
+  text-transform: uppercase; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, transform 0.3s ease; 
+  outline: none; 
+  box-shadow: none; 
+ 
+}
+.button:hover {
+  background-color: #218838; /* Verde más oscuro en hover */
+  transform: scale(1.05); /* Efecto de aumento */
+}
+
+.button:focus {
+  outline: none; /* Asegura que no haya contorno en el foco */
+}
