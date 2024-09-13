@@ -197,4 +197,3 @@ var timelineSwiper = new Swiper ('.timeline .swiper-container', {
   
 
    // Selecciona los botones de proyectos y la superposición
-
