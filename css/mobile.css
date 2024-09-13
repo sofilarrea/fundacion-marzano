@@ -1297,8 +1297,8 @@ display: none;
 
 .subtitle {
   font-size: 2.3rem;
-  font-family: "Playfair Display", serif;
-  margin-top: -13px;
+  font-family: "Lato", sans-serif;
+  margin-top: 50px;
 }
 .subtitle-ideario{
    margin: 15px 0;
