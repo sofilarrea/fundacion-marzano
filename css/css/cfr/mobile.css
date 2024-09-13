@@ -250,6 +250,11 @@
    
     gap: 15px;
   }
+  .card-proyectos a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .card-figure {
     display: flex;
     justify-content: center;
