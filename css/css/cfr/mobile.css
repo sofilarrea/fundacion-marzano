@@ -1248,6 +1248,12 @@ border-left: 4px solid #ED920E;
   z-index: -1;
   animation: moveline 6s linear forwards;
 }
+.date{
+  font-size: 1.1rem;
+  color:#ED920E;
+  font-weight: bold;
+
+}
 @keyframes moveline {
   0%{
     height: 0;
