@@ -581,17 +581,23 @@
 }
 .title{
     font-size: 2rem;
-    font-family: "Playfair Display", serif;
+    font-family: "Lato", serif;
     padding: 20px;
     margin-bottom:-31px;
     margin-top: 48px;
     color: #333333;
 }
 .subtitle{
-    padding: 33px;
-    font-size: 2.3rem;
-    margin-top: 0px;
-    color: #ED920E;
+  padding: 11px 38px;
+  font-size: 2.3rem;
+  margin-top: 0px;
+  color: #ED920E;
+}
+.subtitlee{
+  padding: 41px 38px;
+  font-size: 2.3rem;
+  margin-top: 0px;
+  color: #ED920E;
 }
 .subtitle-cfr{
     padding: 19px;

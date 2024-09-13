@@ -241,3 +241,8 @@ li a.facebook:hover img {
 .container-tres{
   height: 600px;
 }
+.container-seis{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

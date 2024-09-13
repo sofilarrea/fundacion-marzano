@@ -441,6 +441,9 @@ display: none;
     margin-top: 0px;
     color: #ED920E;
 }
+.container-seis{
+  display: flex;
+}
 .tarjetas-seccion-seis{
     background-color: white;
     padding: 20px;
@@ -767,7 +770,7 @@ display: none;
   } */
   .subtitle{
     margin: 15px 0;
-    padding: 20px 23px;
+    padding: 10px 23px;
     font-size: 2.3rem;
     margin-top: 0px;
     color: #ED920E;

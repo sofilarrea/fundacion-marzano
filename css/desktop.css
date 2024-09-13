@@ -12,6 +12,9 @@
     }
 }
 @media screen and (min-width: 2560px){
+  .tarjetas-seccion-seis {
+    width: 40%;
+  }
   .title,
   .title-dos{
     font-size: 3rem;
@@ -84,6 +87,7 @@
 .date-right{
   font-size:2.5rem;
 } */
+
 }
 /* .date-right{
   right: 91%;
@@ -157,4 +161,6 @@
 .parafo p{
   font-size: 1.6rem;
 }
-/* carusel Nosotros */
+.tarjetas-seccion-seis {
+   width: 71%;
+}
