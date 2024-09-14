@@ -30,3 +30,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Optional: Automatic image change every 3 seconds
     setInterval(showNext, 1500);
 });
+
+const proyectos = document.getElementById('proyectos')

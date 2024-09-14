@@ -600,6 +600,9 @@
   color: #ED920E;
 }
 .subtitlee{
+  display: flex;
+  justify-content: center;
+  
   padding: 41px 38px;
   font-size: 2.3rem;
   margin-top: 0px;
