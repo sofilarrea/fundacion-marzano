@@ -1348,3 +1348,20 @@ border-left: 4px solid #ED920E;
 .button:focus {
   outline: none; /* Asegura que no haya contorno en el foco */
 }
+.donar{
+  margin: 50px auto;
+}
+.br{
+  display: none;
+}
+@media screen and (min-width: 320px) {
+  .foto-las-retamas img {
+    margin: 0;
+    padding: 10px;
+    width: 292px;
+    border-radius: 20px;
+}
+.br{
+  display: block;
+}
+}
