@@ -75,7 +75,7 @@ figure, .contenido-las-retamas {
   width: 371px;
   object-fit: cover;
   object-position: center;
-  border-radius: 10px;
+  border-radius: 20px;
   transition: all 0.3s;
 }
 
@@ -121,3 +121,4 @@ figure, .contenido-las-retamas {
   left: 37px;
 
 }
+

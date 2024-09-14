@@ -179,7 +179,7 @@
     padding: 20px;
     background-color: white;
     border-radius: 20px;
-    margin: 30px auto;
+    margin: 60px auto;
   }
   
   .container-title {
@@ -602,7 +602,7 @@
 .subtitlee{
   display: flex;
   justify-content: center;
-  
+
   padding: 41px 38px;
   font-size: 2.3rem;
   margin-top: 0px;
