@@ -197,3 +197,29 @@ var timelineSwiper = new Swiper ('.timeline .swiper-container', {
   
 
    // Selecciona los botones de proyectos y la superposición
+   function animateNumber(element, start, end, duration) {
+    let startTime = null;
+    
+    function updateNumber(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const progress = currentTime - startTime;
+        const currentNumber = Math.min(Math.floor(start + (progress / duration) * (end - start)), end);
+        element.innerHTML = currentNumber;  // Cambiamos textContent por innerHTML para asegurar formato correcto
+        if (currentNumber < end) {
+            requestAnimationFrame(updateNumber);
+        }
+    }
+    
+    requestAnimationFrame(updateNumber);
+}
+
+// Seleccionar los elementos
+const counters = document.querySelectorAll('.container-cinco .uno h3, .container-cinco .dos h3');
+
+// Valores finales para los contadores
+const values = [70, 9, 2000]; // Estos son los valores que queremos mostrar al final
+
+// Aplicar animación a cada contador
+counters.forEach((counter, index) => {
+    animateNumber(counter, 0, values[index], 2000); // Duración 2000 ms (2 segundos)
+});

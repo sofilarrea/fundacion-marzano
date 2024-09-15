@@ -122,3 +122,6 @@ figure, .contenido-las-retamas {
 
 }
 
+.subtitlee{
+  justify-content: flex-start;
+}
