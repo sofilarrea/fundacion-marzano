@@ -100,10 +100,9 @@
 
 
 .header-las-retamas {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.571), rgba(0, 0, 0, 0.582)), url('/assets/images/oliva.jpeg'); /* Imagen de fondo */
+    background-image:linear-gradient(rgba(0, 0, 0, 0.571), rgba(0, 0, 0, 0.582)), url('/assets/images/retamas.jpeg'); /* Imagen de fondo */
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
     width: 100%;
     height: 100vh; /* Ocupa toda la altura de la pantalla */
     display: flex;
@@ -1280,6 +1279,7 @@ border-left: 4px solid #ED920E;
 }
 .text-box h2{
   font-weight: 600;
+  color: #0A375F;
 }
 .text-box small{
   display: inline-block;
