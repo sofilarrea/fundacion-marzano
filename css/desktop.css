@@ -10,6 +10,9 @@
       background-position: unset;
 
     }
+    .navbar-links li a {
+      font-size: 18px;
+    }
 }
 @media screen and (min-width: 2560px){
   .tarjetas-seccion-seis {
