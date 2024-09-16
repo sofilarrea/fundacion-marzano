@@ -1233,6 +1233,7 @@ border-left: 4px solid #ED920E;
   position: relative;
   border-radius: 6px;
   font-size: 15px;
+  box-shadow: 0 0 5px rgba(8, 3, 3, 0.5);
 }
 .left-container{
  left: 0;
