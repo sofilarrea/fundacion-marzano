@@ -32,3 +32,17 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 const proyectos = document.getElementById('proyectos')
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const whatsappIcon = document.getElementById('whatsapp-icon'); // Seleccionamos el ícono de la imagen
+
+    whatsappIcon.addEventListener('click', () => {
+        const phoneNumber = '5492613395692'; // Reemplaza con el número de teléfono incluyendo el código de país
+        const message = 'Hola, me gustaría obtener más información'; // Mensaje que se enviará
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+        // Abrimos WhatsApp Web en una nueva pestaña
+        window.open(whatsappURL, '_blank');
+    });
+});

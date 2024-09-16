@@ -1373,4 +1373,5 @@ border-left: 4px solid #ED920E;
 }
 .figure img{
   width: 50px;
+  cursor: pointer;
 }
