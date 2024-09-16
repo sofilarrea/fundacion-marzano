@@ -907,6 +907,7 @@ display: none;
   }
   .text-box h2{
     font-weight: 600;
+    color: #0A375F;
   }
   .text-box small{
     display: inline-block;
