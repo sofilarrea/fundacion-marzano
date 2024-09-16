@@ -200,9 +200,7 @@ display: none;
   transition: color 0.3s ease;
 }
 
-.navbar-links a:hover {
-  color: #f7c10e; /* Un toque de color dorado en hover */
-}
+
 
 .dropdown-menu{
   display: flex;
@@ -214,6 +212,15 @@ display: none;
   justify-content: center;
   margin-bottom: 10px;
 }
+/* Asegúrate de que el dropdown se muestre correctamente */
+.navbar-links .dropdown-menu {
+  display: none; /* Oculto por defecto */
+}
+
+.navbar-links .dropdown:hover .dropdown-menu {
+  display: block; /* Muestra el menú al hacer hover */
+}
+
 .hero-content{
     display: flex;
     justify-content: center;

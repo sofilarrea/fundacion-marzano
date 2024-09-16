@@ -64,7 +64,7 @@
 }
 
 .navbar-links .dropdown-menu li a:hover {
-  background-color: #f7c10e; /* Un color dorado cuando se pasa por encima */
+  background-color:#0A375F; /* Un color dorado cuando se pasa por encima */
   color: #fff;
   border-radius: 4px;
 }
