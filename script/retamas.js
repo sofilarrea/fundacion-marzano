@@ -46,3 +46,37 @@ document.addEventListener('DOMContentLoaded', () => {
         window.open(whatsappURL, '_blank');
     });
 });
+
+
+// Abre el modal
+function openModal() {
+    document.getElementById('imageModal').style.display = 'block';
+    showImage(1); // Mostrar la primera imagen por defecto
+}
+
+// Cierra el modal
+function closeModal() {
+    document.getElementById('imageModal').style.display = 'none';
+}
+
+// Cambia entre las imágenes
+function showImage(imageNumber) {
+    var image1 = document.getElementById('modalImage1');
+    var image2 = document.getElementById('modalImage2');
+    
+    if (imageNumber === 1) {
+        image1.style.display = 'block';
+        image2.style.display = 'none';
+    } else if (imageNumber === 2) {
+        image1.style.display = 'none';
+        image2.style.display = 'block';
+    }
+}
+
+// Cierra el modal al hacer clic fuera del contenido
+window.onclick = function(event) {
+    var modal = document.getElementById('imageModal');
+    if (event.target === modal) {
+        closeModal();
+    }
+}
