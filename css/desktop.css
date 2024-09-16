@@ -1,19 +1,108 @@
-@media screen and (min-width: 1440px){
-    .container-cuatro{
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .container-cinco{
-        justify-content: space-evenly;
-    }
-    .container-dos,
-    .container-tres{
-      background-position: unset;
 
-    }
-    .navbar-links li a {
-      font-size: 18px;
-    }
+/* .date-right{
+  right: 91%;
 }
+.date-left{
+  left: 91%;
+} */
+/* Limitar y centrar la sección */
+.ideario-dos {
+  max-width: 1200px;
+  border-radius: 20px;
+  margin: 0 auto;
+  max-width: 1200px; /* Limita el ancho de la sección */
+  padding: 0 20px; /* Añade algo de espacio a los lados */
+}
+
+/* Estilo para escritorio (dos cards por fila) */
+@media (min-width: 1025px) {
+  .container-ideario {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .container-ideario .card {
+    width: 100%;
+
+  }
+  .container-dos{
+    height: 600px;
+  }
+}
+
+.accordion-section-ideario.open {
+  background-color: #0A375F; /* Cambia el color de fondo cuando está abierto */
+  border-left: 4px solid #ED920E;
+  ; /* Agrega un borde o algún estilo especial */
+}
+.container-proyectos {
+  grid-template-columns: 1fr 1fr;
+}
+.parrafo-cfr{
+ padding: 25px;
+}
+.container-tres{
+  background-position:unset;
+  height: 600px;
+}
+.title-centro{
+  text-align: center;
+  justify-content: center;
+}
+.subtitle-ideario{
+  justify-content: center;
+  display: flex;
+
+}
+.text-box h2{
+  font-size: 1.9rem;
+}
+.text-box p{
+  font-size: 1.1rem;
+}
+.date{
+  font-size: 2rem;
+ 
+}
+.parafo p{
+  font-size: 1.6rem;
+}
+.tarjetas-seccion-seis {
+   width: 95%;
+}
+
+
+
+
+@media screen and (min-width: 1440px){
+  .container-cuatro{
+      grid-template-columns: repeat(4, 1fr);
+  }
+  .container-cinco{
+      justify-content: space-evenly;
+  }
+  .container-dos,
+  .container-tres{
+    background-position: unset;
+
+  }
+  .navbar-links li a {
+    font-size: 18px;
+  }
+  .tarjetas-seccion-seis {
+     width: 72%;
+  }
+}
+
+
+
+
+
+
 @media screen and (min-width: 2560px){
   .tarjetas-seccion-seis {
     width: 40%;
@@ -91,79 +180,4 @@
   font-size:2.5rem;
 } */
 
-}
-/* .date-right{
-  right: 91%;
-}
-.date-left{
-  left: 91%;
-} */
-/* Limitar y centrar la sección */
-.ideario-dos {
-  max-width: 1200px;
-  border-radius: 20px;
-  margin: 0 auto;
-  max-width: 1200px; /* Limita el ancho de la sección */
-  padding: 0 20px; /* Añade algo de espacio a los lados */
-}
-
-/* Estilo para escritorio (dos cards por fila) */
-@media (min-width: 1025px) {
-  .container-ideario {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-  }
-
-  .container-ideario .card {
-    width: 100%;
-
-  }
-  .container-dos{
-    height: 600px;
-  }
-}
-
-.accordion-section-ideario.open {
-  background-color: #0A375F; /* Cambia el color de fondo cuando está abierto */
-  border-left: 4px solid #ED920E;
-  ; /* Agrega un borde o algún estilo especial */
-}
-.container-proyectos {
-  grid-template-columns: 1fr 1fr;
-}
-.parrafo-cfr{
- padding: 25px;
-}
-.container-tres{
-  background-position:unset;
-  height: 600px;
-}
-.title-centro{
-  text-align: center;
-  justify-content: center;
-}
-.subtitle-ideario{
-  justify-content: center;
-  display: flex;
-
-}
-.text-box h2{
-  font-size: 1.9rem;
-}
-.text-box p{
-  font-size: 1.1rem;
-}
-.date{
-  font-size: 2rem;
- 
-}
-.parafo p{
-  font-size: 1.6rem;
-}
-.tarjetas-seccion-seis {
-   width: 71%;
 }
