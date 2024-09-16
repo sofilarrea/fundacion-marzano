@@ -1365,3 +1365,12 @@ border-left: 4px solid #ED920E;
   display: block;
 }
 }
+.figure{
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+
+}
+.figure img{
+  width: 50px;
+}
