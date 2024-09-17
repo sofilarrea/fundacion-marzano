@@ -25,4 +25,16 @@ a {
 }
 :root{
   --color--yellow: #ED920E;
+  --color-cadet: #4f6d7a;
+--color-maximum-blue: #5ea5b8;
+--color-columbia-blue: #c0d6df;
+--color--blue: #0A375F;
+--color-platinum: #eaeaea;
+--color-cultured: #f3f3f3;
+--color-nero: #444444;
+--dl-gradient-right: linear-gradient(90deg, rgba(0,0,0,0.04) 20%, rgba(255,255,255,0) 10%);
+--font-size-small: 0.875em;
+--tablet-width: 768px;
+--desktop-width: 1024px;
+
 }

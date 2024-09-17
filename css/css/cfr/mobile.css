@@ -737,6 +737,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 35px;
   background-color: white;
+  width: 32%;
 }
 .carousel-doss {
   display: flex;
@@ -1446,6 +1447,60 @@ border-left: 4px solid #ED920E;
   position: relative;
   color: white; /* Color del texto */
 }
-.elegant-list{
-  font-size: 1.2rem;
+dl-blurbs {
+  display: grid;
+}
+
+@media (min-width: 768px) {
+  .dl-blurbs {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2vw;
+  }
+}
+
+/* DL Styles */
+dl {
+  counter-reset: count;
+  background: var(--dl-gradient-right);
+ padding-left: 4vw;
+  padding-right: 4vw;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  dl {
+    padding-left: 2vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  dl {
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+  }
+}
+
+dl + dl {
+  counter-reset: count 4;
+}
+
+dt {
+  counter-increment: count;
+  color: var(--color-cadet);
+  font-family: var(--font-primary);
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+dt::before {
+  content: counter(count, decimal-leading-zero) ".";
+  font-family: var(--font-heading);
+  color: var(--color--blue);
+  margin-left: -1vw;
+  padding-right: 12px;
+}
+
+dd {
+  margin-left: 5vw;
+  margin-bottom: 2vh;
 }
