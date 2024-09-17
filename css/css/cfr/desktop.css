@@ -24,6 +24,9 @@
       .parrafo-cfr {
     font-size: 1.2rem;
 }
+.tarjeta-ocho{
+  width:  50%;
+}
 }
 @media screen and (min-width: 1440px){
 .container-proyectos {
@@ -31,6 +34,9 @@
     flex-direction: row;
     
   } 
+  .tarjeta-ocho{
+    width:  50%;
+  }
 }
 .foto-las-retamas img {
   
