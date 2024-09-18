@@ -72,7 +72,7 @@
   font-size: 1.6rem;
 }
 .tarjetas-seccion-seis {
-   width: 95%;
+   width: 91%;
 }
 
 
@@ -94,7 +94,7 @@
     font-size: 18px;
   }
   .tarjetas-seccion-seis {
-     width: 72%;
+     width: 65%;
   }
 }
 
@@ -105,7 +105,7 @@
 
 @media screen and (min-width: 2560px){
   .tarjetas-seccion-seis {
-    width: 40%;
+    width: 37%;
   }
   .title,
   .title-dos{
