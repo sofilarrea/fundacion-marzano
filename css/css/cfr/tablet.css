@@ -125,3 +125,7 @@ figure, .contenido-las-retamas {
 .subtitlee{
   justify-content: flex-start;
 }
+
+.card-buttonn{
+  margin-top: 19px;
+}
