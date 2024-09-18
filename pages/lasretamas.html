@@ -224,33 +224,51 @@
           </div>
       </section> -->
       
-      <section class="donar"> 
+      <section class="donar">
         <div class="container-donar">
-          <div class="title-donar">
-            <h3 class="subtitlee">Cómo Colaborar</h3>
-          </div>
-          <div class="card-container">
-            <div class="card">
-              <h3 class="card-title">SOCIO</h3>
-              <p class="card-text">Doná mensualmente para contrubuir con el sostenimiento de los proyectos pedagógicos.</p>
-<!--               <button class="card-button">Learn More</button>
- -->            </div>
-            
-            <div class="card">
-              <h3 class="card-title">PADRINO</h3>
-              <p class="card-text">Doná para sostener la beca anual de una estudiante.</p>
-              <!-- <button class="card-button">Learn More</button> -->
+            <div class="title-donar">
+                <h3 class="subtitlee">Cómo Colaborar</h3>
             </div>
-            <div class="card">
-              <a href="https://donaronline.org/fundacion-marzano/apoyemos-la-educacion-rural" target="_blank">
-              <h3 class="card-title"> Donar Online</h3>
-              <p class="card-text">Con tu colaboración podremos facilitarle que terminen el nivel secundario, orientación personal, almuerzo y tener el edificio en condiciones.</p>
-            </a>
+            <div class="card-container">
+                <div class="card">
+                    <h3 class="card-title">SOCIO</h3>
+                    <p class="card-text">Doná mensualmente para contribuir con el sostenimiento de los proyectos pedagógicos.</p>
+                    <button class="card-button" onclick="openModal('modalSocio')">Más Información</button>
+                </div>
+    
+                <div class="card">
+                    <h3 class="card-title">PADRINO</h3>
+                    <p class="card-text">Doná para sostener la beca anual de un estudiante.</p>
+                    <button class="card-button" onclick="openModal('modalPadrino')">Más Información</button>
+                </div>
+                <div class="card">
+                    <a href="https://donaronline.org/fundacion-marzano/apoyemos-la-educacion-rural" target="_blank">
+                        <h3 class="card-title">Donar Online</h3>
+                        <p class="card-text">Con tu colaboración podremos facilitar que terminen el nivel secundario, orientación personal, almuerzo y tener el edificio en condiciones.</p>
+                    </a>
+                </div>
             </div>
-          </div>
-          </div>
         </div>
-      </section>
+    </section>
+    
+    <!-- Modal Socio -->
+    <div id="modalSocio" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalSocio')">&times;</span>
+            <h2>Conviértete en Socio</h2>
+            <p>Al convertirte en socio, estarás apoyando de manera continua nuestros proyectos educativos. Tu donación mensual ayudará a mantener y expandir nuestros programas.</p>
+        </div>
+    </div>
+    
+    <!-- Modal Padrino -->
+    <div id="modalPadrino" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modalPadrino')">&times;</span>
+            <h2>Conviértete en Padrino</h2>
+            <p>Al apadrinar a un estudiante, estarás cubriendo los costos de su educación por un año. Tu apoyo le permitirá continuar sus estudios y tener una mejor calidad de vida.</p>
+        </div>
+    </div>
+    
       <section class="seccion-ocho">
         <div class="container-ocho">
             <div class="tarjeta-ocho">

@@ -80,3 +80,25 @@ window.onclick = function(event) {
         closeModal();
     }
 }
+// Función para abrir el modal
+function openModal(modalId) {
+    document.getElementById(modalId).style.display = "block";
+}
+
+// Función para cerrar el modal
+function closeModal(modalId) {
+    document.getElementById(modalId).style.display = "none";
+}
+
+// Cerrar el modal al hacer clic fuera de él
+window.onclick = function(event) {
+    const modalSocio = document.getElementById('modalSocio');
+    const modalPadrino = document.getElementById('modalPadrino');
+    
+    if (event.target == modalSocio) {
+        modalSocio.style.display = "none";
+    }
+    if (event.target == modalPadrino) {
+        modalPadrino.style.display = "none";
+    }
+}
