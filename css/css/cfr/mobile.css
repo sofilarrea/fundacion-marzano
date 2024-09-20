@@ -1590,7 +1590,7 @@ dd {
   color: white; /* Color del texto */
 }
 .header-el-tejado{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.571), rgba(0, 0, 0, 0.582)), url('/assets/images/fm6.jpg'); /* Imagen de fondo */
+  background-image:linear-gradient(rgba(0, 0, 0, 0.571), rgba(0, 0, 0, 0.582)), url('/assets/images/fm13.jpg'); /* Imagen de fondo */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -1607,4 +1607,13 @@ dd {
   width: 132px;
   height: 90%;
   margin-right: 10px;
+}
+.container-doss{ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;    
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.619) 80%, rgba(10, 2, 9, 0.241)), url('/assets/images/IMG-20220818-WA0041\ \(1\).jpg');
+  border-radius: 20px;
+  padding: 20px;
 }
