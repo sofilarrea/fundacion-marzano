@@ -1589,3 +1589,22 @@ dd {
   position: relative;
   color: white; /* Color del texto */
 }
+.header-el-tejado{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.571), rgba(0, 0, 0, 0.582)), url('/assets/images/fm6.jpg'); /* Imagen de fondo */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column; /* Asegura que los elementos estén en columna */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  text-align: center; /* Alinea el texto al centro */
+  position: relative;
+  color: white; /* Color del texto */
+}
+.home-cfrr img {
+  width: 132px;
+  height: 90%;
+  margin-right: 10px;
+}
