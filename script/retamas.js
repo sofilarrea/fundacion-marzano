@@ -81,3 +81,34 @@ window.onclick = function(event) {
         closeModal();
     }
 }
+
+
+
+// Función para abrir el modal
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "block";
+    }
+}
+
+// Función para cerrar el modal
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Cerrar el modal al hacer clic fuera del contenido del modal
+window.onclick = function(event) {
+    const modalSocio = document.getElementById('modalSocio');
+    const modalPadrino = document.getElementById('modalPadrino');
+    
+    if (event.target === modalSocio) {
+        closeModal('modalSocio');
+    }
+    if (event.target === modalPadrino) {
+        closeModal('modalPadrino');
+    }
+}
