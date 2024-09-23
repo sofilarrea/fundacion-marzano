@@ -386,9 +386,9 @@ display: none;
 .container-cinco{
     background-color: #0A375F;
     width: 100%;
-    height:290px;
+    height:390px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -397,6 +397,11 @@ display: none;
     padding: 5px;
     font-size: 1rem;
     font-family: "Playfair Display", serif;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 }
 .uno h3{
@@ -1736,4 +1741,11 @@ display: none;
 }
 .direccion{
   padding: 5px 10px;
+}
+
+.uno{
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
