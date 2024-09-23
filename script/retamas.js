@@ -1,4 +1,3 @@
-document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     const items = document.querySelectorAll('.carousel-item-doss');
     const totalItems = items.length;
@@ -29,12 +28,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Optional: Automatic image change every 3 seconds
     setInterval(showNext, 1500);
-});
+
 
 const proyectos = document.getElementById('proyectos')
 
 
-document.addEventListener('DOMContentLoaded', () => {
     const whatsappIcon = document.getElementById('whatsapp-icon'); // Seleccionamos el ícono de la imagen
 
     whatsappIcon.addEventListener('click', () => {
@@ -45,25 +43,28 @@ document.addEventListener('DOMContentLoaded', () => {
         // Abrimos WhatsApp Web en una nueva pestaña
         window.open(whatsappURL, '_blank');
     });
-});
 
 
-// Abre el modal
+
+
+    // Abre el modal y muestra la imagen inicial
 function openModal() {
-    document.getElementById('imageModal').style.display = 'block';
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'block';
     showImage(1); // Mostrar la primera imagen por defecto
 }
 
 // Cierra el modal
 function closeModal() {
-    document.getElementById('imageModal').style.display = 'none';
+    const modal = document.getElementById('imageModal');
+    modal.style.display = 'none';
 }
 
-// Cambia entre las imágenes
+// Cambia entre las imágenes del modal
 function showImage(imageNumber) {
-    var image1 = document.getElementById('modalImage1');
-    var image2 = document.getElementById('modalImage2');
-    
+    const image1 = document.getElementById('modalImage1');
+    const image2 = document.getElementById('modalImage2');
+
     if (imageNumber === 1) {
         image1.style.display = 'block';
         image2.style.display = 'none';
@@ -73,32 +74,10 @@ function showImage(imageNumber) {
     }
 }
 
-// Cierra el modal al hacer clic fuera del contenido
+// Cierra el modal al hacer clic fuera del contenido del modal
 window.onclick = function(event) {
-    var modal = document.getElementById('imageModal');
+    const modal = document.getElementById('imageModal');
     if (event.target === modal) {
         closeModal();
-    }
-}
-// Función para abrir el modal
-function openModal(modalId) {
-    document.getElementById(modalId).style.display = "block";
-}
-
-// Función para cerrar el modal
-function closeModal(modalId) {
-    document.getElementById(modalId).style.display = "none";
-}
-
-// Cerrar el modal al hacer clic fuera de él
-window.onclick = function(event) {
-    const modalSocio = document.getElementById('modalSocio');
-    const modalPadrino = document.getElementById('modalPadrino');
-    
-    if (event.target == modalSocio) {
-        modalSocio.style.display = "none";
-    }
-    if (event.target == modalPadrino) {
-        modalPadrino.style.display = "none";
     }
 }
