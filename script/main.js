@@ -223,3 +223,5 @@ const values = [70, 9, 2000]; // Estos son los valores que queremos mostrar al f
 counters.forEach((counter, index) => {
     animateNumber(counter, 0, values[index], 2000); // Duración 2000 ms (2 segundos)
 });
+
+

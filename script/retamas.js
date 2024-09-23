@@ -1,114 +1,108 @@
-    let currentIndex = 0;
-    const items = document.querySelectorAll('.carousel-item-doss');
-    const totalItems = items.length;
-    const carousel = document.querySelector('.carousel-doss');
-    const prevButton = document.querySelector('.carousel-button.prev'); // Asegúrate de tener estos botones en tu HTML
-    const nextButton = document.querySelector('.carousel-button.next'); // Asegúrate de tener estos botones en tu HTML
+// Carousel
+let currentIndex = 0;
+const items = document.querySelectorAll('.carousel-item-doss');
+const totalItems = items.length;
+const carousel = document.querySelector('.carousel-doss');
+const prevButton = document.querySelector('.carousel-button.prev');
+const nextButton = document.querySelector('.carousel-button.next');
 
-    function updateCarousel() {
+function updateCarousel() {
+    if (carousel) {
         const offset = -currentIndex * 100;
         carousel.style.transform = `translateX(${offset}%)`;
     }
+}
 
-    function showNext() {
-        currentIndex = (currentIndex + 1) % totalItems;
-        updateCarousel();
-    }
+function showNext() {
+    currentIndex = (currentIndex + 1) % totalItems;
+    updateCarousel();
+}
 
-    function showPrev() {
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
-        updateCarousel();
-    }
+function showPrev() {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : totalItems - 1;
+    updateCarousel();
+}
 
-    // Event listeners for next/prev buttons
-    if (nextButton && prevButton) {
-        nextButton.addEventListener('click', showNext);
-        prevButton.addEventListener('click', showPrev);
-    }
+if (nextButton && prevButton) {
+    nextButton.addEventListener('click', showNext);
+    prevButton.addEventListener('click', showPrev);
+}
 
-    // Optional: Automatic image change every 3 seconds
+// Auto-slide
+if (totalItems > 0) {
     setInterval(showNext, 1500);
+}
 
-
-const proyectos = document.getElementById('proyectos')
-
-
-    const whatsappIcon = document.getElementById('whatsapp-icon'); // Seleccionamos el ícono de la imagen
-
+// WhatsApp
+const whatsappIcon = document.getElementById('whatsapp-icon');
+if (whatsappIcon) {
     whatsappIcon.addEventListener('click', () => {
-        const phoneNumber = '5492613395692'; // Reemplaza con el número de teléfono incluyendo el código de país
-        const message = 'Hola, me gustaría obtener más información'; // Mensaje que se enviará
+        const phoneNumber = '5492613395692';
+        const message = 'Hola, me gustaría obtener más información';
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-
-        // Abrimos WhatsApp Web en una nueva pestaña
         window.open(whatsappURL, '_blank');
     });
-
-
-
-
-    // Abre el modal y muestra la imagen inicial
-function openModal() {
-    const modal = document.getElementById('imageModal');
-    modal.style.display = 'block';
-    showImage(1); // Mostrar la primera imagen por defecto
 }
 
-// Cierra el modal
-function closeModal() {
-    const modal = document.getElementById('imageModal');
-    modal.style.display = 'none';
+// Funciones para manejar los modales
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = 'block';
+    }
 }
 
-// Cambia entre las imágenes del modal
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = 'none';
+    }
+}
+
+// Unificar eventos para cerrar modales al hacer clic fuera de ellos
+window.onclick = function(event) {
+    const modals = ['modalSocio', 'modalPadrino', 'imageModal'];
+    modals.forEach(modalId => {
+        const modal = document.getElementById(modalId);
+        if (modal && event.target === modal) {
+            closeModal(modalId);
+        }
+    });
+};
+
+// Cierre de modales con la tecla "Escape"
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        closeModal('modalSocio');
+        closeModal('modalPadrino');
+        closeModal('imageModal');
+    }
+});
+
+// Inicialización del modal de imágenes
+document.addEventListener('DOMContentLoaded', () => {
+    const verPlanDeEstudio = document.getElementById('verPlanDeEstudio');
+    if (verPlanDeEstudio) {
+        verPlanDeEstudio.addEventListener('click', () => openModal('imageModal'));
+    }
+
+    const closeModalButtons = document.querySelectorAll('.close');
+    closeModalButtons.forEach(button => {
+        button.addEventListener('click', () => closeModal(button.closest('.modall').id));
+    });
+});
 function showImage(imageNumber) {
     const image1 = document.getElementById('modalImage1');
     const image2 = document.getElementById('modalImage2');
 
-    if (imageNumber === 1) {
-        image1.style.display = 'block';
-        image2.style.display = 'none';
-    } else if (imageNumber === 2) {
-        image1.style.display = 'none';
-        image2.style.display = 'block';
+    if (image1 && image2) {
+        image1.style.display = (imageNumber === 1) ? 'block' : 'none';
+        image2.style.display = (imageNumber === 2) ? 'block' : 'none';
     }
 }
 
-// Cierra el modal al hacer clic fuera del contenido del modal
-window.onclick = function(event) {
-    const modal = document.getElementById('imageModal');
-    if (event.target === modal) {
-        closeModal();
-    }
-}
-
-
-
-// Función para abrir el modal
-function openModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = "block";
-    }
-}
-
-// Función para cerrar el modal
-function closeModal(modalId) {
-    const modal = document.getElementById(modalId);
-    if (modal) {
-        modal.style.display = "none";
-    }
-}
-
-// Cerrar el modal al hacer clic fuera del contenido del modal
-window.onclick = function(event) {
-    const modalSocio = document.getElementById('modalSocio');
-    const modalPadrino = document.getElementById('modalPadrino');
-    
-    if (event.target === modalSocio) {
-        closeModal('modalSocio');
-    }
-    if (event.target === modalPadrino) {
-        closeModal('modalPadrino');
-    }
-}
+// Asegúrate de que los botones de navegación en el modal llamen a showImage correctamente
+const imageNavButtons = document.querySelectorAll('.modal-navigation .nav-button');
+imageNavButtons.forEach((button, index) => {
+    button.addEventListener('click', () => showImage(index + 1));
+});

@@ -386,7 +386,7 @@ display: none;
 .container-cinco{
     background-color: #0A375F;
     width: 100%;
-    height:390px;
+    height: 390px;
     display: flex;
     flex-direction: column;
     justify-content: center;

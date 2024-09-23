@@ -141,22 +141,25 @@
           </div>
       </section>
       
-      <!-- Modal para mostrar las imágenes -->
-      <div id="imageModal" class="modal">
-        <!-- Botón de cierre -->
-        <span class="close" onclick="closeModal()">&times;</span>
-        <div class="modal-content">
-            <!-- Imágenes -->
-            <img id="modalImage1" class="modal-image" src="/assets/images/plan de estudio.jpg" alt="Plan de Estudio 1" style="display: block;">
-            <img id="modalImage2" class="modal-image" src="/assets/images/plan de estudio dos.jpg" alt="Plan de Estudio 2" style="display: none;">
-            <!-- Navegación de imágenes -->
-            <div class="modal-navigation">
-                <button onclick="showImage(1)" class="nav-button">Imagen 1</button>
-                <button onclick="showImage(2)" class="nav-button">Imagen 2</button>
-            </div>
+ <!-- Enlace o texto para abrir el modal -->
+<a id="verPlanDeEstudio" style="cursor: pointer; color: blue; text-decoration: underline;">Ver plan de estudio</a>
+
+<!-- Modal para mostrar las imágenes -->
+<div id="imageModal" class="modall">
+    <!-- Botón de cierre -->
+    <span class="close" onclick="closeModal()">&times;</span>
+    <div class="modal-contentt">
+        <!-- Imágenes -->
+        <img id="modalImage1" class="modal-image" src="/assets/images/plan de estudio.jpg" alt="Plan de Estudio 1" style="display: block;">
+        <img id="modalImage2" class="modal-image" src="/assets/images/plan de estudio dos.jpg" alt="Plan de Estudio 2" style="display: none;">
+        <!-- Navegación de imágenes -->
+        <div class="modal-navigation">
+            <button onclick="showImage(1)" class="nav-button">Imagen 1</button>
+            <button onclick="showImage(2)" class="nav-button">Imagen 2</button>
         </div>
     </div>
-    
+</div>
+
       
         <section>
           <div class="timeline-section-dos">
