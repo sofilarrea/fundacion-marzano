@@ -106,3 +106,19 @@ const imageNavButtons = document.querySelectorAll('.modal-navigation .nav-button
 imageNavButtons.forEach((button, index) => {
     button.addEventListener('click', () => showImage(index + 1));
 });
+function copiarDatosBancarios() {
+  // Datos bancarios que deseas copiar
+  const datosBancarios = `
+      Banco: Galicia (suc. 81 Mendoza)
+      Cuenta: Cuenta Corriente en Pesos 17480-8081-5
+      CBU: 0070 0818 2000 0017 4808 53
+      Alias: las.retamas.fm
+  `;
+
+  // Copiar los datos al portapapeles
+  navigator.clipboard.writeText(datosBancarios).then(() => {
+      alert('Datos bancarios copiados al portapapeles');
+  }).catch(err => {
+      console.error('Error al copiar los datos: ', err);
+  });
+}

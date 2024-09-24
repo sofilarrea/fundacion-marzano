@@ -966,6 +966,10 @@
   background-position: center;
   margin-top: 50px;
   padding: 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .accordion-ideario {
