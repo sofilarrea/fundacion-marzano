@@ -1375,7 +1375,6 @@ border-left: 4px solid #ED920E;
 }
 .figure{
   display: flex;
-  justify-content: center;
   margin: 20px auto;
 
 }
