@@ -100,8 +100,7 @@
 
 
 .header-las-retamas {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.571), rgba(0, 0, 0, 0.582)), url('/assets/images/retamas.jpeg'); /* Imagen de fondo */
-    background-repeat: no-repeat;
+  background-image: linear-gradient(rgb(0 0 0 / 16%), rgb(0 0 0 / 33%)), url(/assets/images/retamas.jpeg);    background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     height: 100vh; /* Ocupa toda la altura de la pantalla */
@@ -117,6 +116,27 @@
   .title-de-nosotros {
     z-index: 1;
   }
+
+/* Estilos para el contenedor semitransparente */
+.title-de-nosotros {
+  position: relative;
+  width: 50%;
+  height: 48%;
+  background-color: rgba(10, 55, 95, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+/* Estilo del texto */
+.subtitle-cfr {
+  color: white; /* Texto blanco */
+  font-size: 20px; /* Tamaño del texto */
+  text-align: center;
+  z-index: 1; /* Asegura que el texto esté encima del fondo */
+}
+
   .subtitle-mision{
     margin: 15px 0;
     padding: 0px 23px;
@@ -1639,4 +1659,12 @@ dd {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.619) 80%, rgba(10, 2, 9, 0.241)), url('/assets/images/IMG-20220818-WA0041\ \(1\).jpg');
   border-radius: 20px;
   padding: 20px;
+}
+
+
+@media screen and (min-width: 232px) {
+  .subtitlee {
+    line-height: 34px;
+  }
+
 }
