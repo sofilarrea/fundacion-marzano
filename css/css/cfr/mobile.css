@@ -120,7 +120,7 @@
 /* Estilos para el contenedor semitransparente */
 .title-de-nosotros {
   position: relative;
-  width: 50%;
+  width: 90%;
   height: 48%;
   background-color: rgba(10, 55, 95, 0.5);
   display: flex;

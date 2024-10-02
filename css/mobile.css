@@ -326,7 +326,7 @@ display: none;
 }
 .parrafo-dos{
     color: white;
-    padding: 20px;
+    padding: 24px 24px;
     font-size: 1.5rem;
     font-family: "Lato", sans-serif;
 }
@@ -1755,5 +1755,5 @@ display: none;
   .subtitle {
     line-height: 43px;
   }
- 
+
 }
