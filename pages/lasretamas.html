@@ -27,7 +27,10 @@
           </ul>
       </nav>
       <div class="title-de-nosotros">
-          <h4 class="subtitle-cfr">Escuela Secundaria Las Retamas</h4>
+        <div class="title-nosotros">
+
+          <h4 class="subtitle-cfr">Centro de Formación Rural Las Retamas</h4>
+        </div>
       </div>
   </header>
 
@@ -73,53 +76,66 @@
 
           <div class="container-proyectos">
             <div class="card-proyectos">
-              <a href="/pages/proyectos-las-retamas.html#talleres"> <!-- Abre el <a> aquí -->
-                <figure class="card-figure">
+                <figure class="card-figure uno">
                   <img src="../assets/images/planta (1).png" alt="icono de planta">
                 </figure>
-                <div class="content-card">
-                  <p><strong>Talleres de sustentabilidad:</strong> huerta hidropónica, producción de alimentos, emprendedurismo y comercialización local</p>
+                <div class="content-card uno">
+                  <p><strong>Talleres de sustentabilidad</strong> <br>
+                    <br>
+                    Huerta hidropónica, producción de alimentos, emprendedurismo y comercialización local</p>
+                    <br>
+                  <p>A través de estos talleres, promovemos el desarrollo de habilidades para generar un impacto en el desarrollo sostenible local y para facilitar la inserción de nuestras alumnas en estudios superiores y en el ámbito laboral.</p>
                 </div> <!-- Cierra el <div> aquí -->
-              </a> <!-- Cierra el <a> aquí -->
+
             </div>
 
             <div class="card-proyectos" id="proyectos">
-              <a href="/pages/proyectos-las-retamas.html#talleres">
+
                 <figure class="card-figure"> <!-- Abre correctamente la etiqueta <figure> -->
                   <img src="../assets/images/libro-abierto (1).png" alt="icono de libro abierto">
                 </figure> <!-- Cierra correctamente la etiqueta <figure> -->
                 <div class="content-card">
                   <p><strong>Tutorías Personalizadas</strong></p>
+                  <br>
+                  <p>Nuestro objetivo es llegar individualmente a cada alumna y su familia. Promovemos el crecimiento personal a través del acompañamiento a cada estudiante, en aspectos académicos, humanos y en el desarrollo de competencias. </p>
+                  <br>
+                  <p>La tutoría y las entrevistas con padres, son medios para garantizar el desarrollo armónico de la alumna, integrando la formación humana y académica en un marco de respeto por la libertad individual.</p>
                 </div>
-              </a> <!-- Cierra correctamente la etiqueta <a> -->
             </div>
 
-            <div class="card-proyectos">
-              <a href="/pages/proyectos-las-retamas.html#talleres">
-              <figure class="card-figure">
+            <div class="card-proyectos cardd">
+              <figure class="card-figure dos">
                 <img src="../assets/images/sistema-informatico.png" alt="icono de computadora">
               </figure>
               <div class="content-card">
                 <p><strong>Inglés y Tecnología</strong></p>
+                <br>
+                <p>Aprender inglés y tecnología ofrece una serie de ventajas, tanto personales como profesionales. </p>
+                <br>
+                  <p>Entre ellas se encuentran: <br>
+                  ● Mejores oportunidades de empleo <br>
+                  ● Mayor acceso a la información <br>
+                  ● Mejor desarrollo personal</p>
               </div>
-            </a>
+
             </div>
             <div class="card-proyectos">
-              <a href="/pages/proyectos-las-retamas.html#talleres">
               <figure class="card-figure">
                 <img src="../assets/images/maleta (3).png" alt="icono de maleta">
               </figure>
               <div class="content-card">
-                <p><strong>Experiencias socio - profesionales</strong><br> (280 horas anuales) en instituciones públicas y privadas</p>
+                <p><strong>Experiencias socio - profesionales</strong>
+                  <br><br> (280 horas anuales) en instituciones públicas y privadas</p>
+                  <br>
+                <p>Un rasgo diferencial del programa académico de Las Retamas es la integración de experiencias socioprofesionales para estudiantes de 4to y 5to año. Estas oportunidades de inmersión implican reubicar el aprendizaje en centros locales de productividad y comercio, incluidas bodegas, veterinarias y centros de salud. </p>
               </div>
-            </a>
             </div>
           </div>
         </section>
         <section class="seccion-dos">
           <div class="container-dos">
             <div class="container-title">
-                <h3 class="subtitlee">Perfil de la <br> <br> Egresada</h3>
+                <h3 class="subtitlee">Perfil de la Egresada</h3>
                 </div>
                 <p class="parrafo-dos">
                   Convencidos de que los cambios significativos dependen del compromiso personal para promover    transformaciones positivas en nuestra sociedad, perseveramos en nuestro enfoque educativo que enfatiza el cultivo de valores.  </p>
@@ -127,20 +143,6 @@
                 </p>
         </div>
         </section>
-       <!--  <section class="plan-de-estudio">
-            <div class="parrafo">
-              <a href="../assets/pdf/Plan de estudio Bachiller con Orientación en Agro y Ambiente.pdf" target="_blank">
-              <h3 class="subtitlee">Ver Plan de Estudio </h3>
-          </a>
-          </div>
-          </div>
-        </section> -->
-       <!--  <section class="plan-de-estudio">
-          <div class="parrafo">
-              <h3 class="subtitlee" " onclick="openModal()">Ver Plan de Estudio</h3>
-          </div>
-      </section> -->
-
  <!-- Enlace o texto para abrir el modal -->
 <a id="verPlanDeEstudio" class="subtitlee">Ver plan de estudio</a>
 
@@ -150,13 +152,13 @@
     <span class="close" onclick="closeModal()">&times;</span>
     <div class="modal-contentt">
         <!-- Imágenes -->
-        <img id="modalImage1" class="modal-image" src="/assets/images/plan de estudio.jpg" alt="Plan de Estudio 1" style="display: block;">
-        <img id="modalImage2" class="modal-image" src="/assets/images/plan de estudio dos.jpg" alt="Plan de Estudio 2" style="display: none;">
-        <!-- Navegación de imágenes -->
-        <div class="modal-navigation">
+        <img id="modalImage1" class="modal-image" src="/assets/images/retamasplandeestudio.jpg" alt="Plan de Estudio 1" style="display: block;">
+<!--         <img id="modalImage2" class="modal-image" src="/assets/images/plan de estudio dos.jpg" alt="Plan de Estudio 2" style="display: none;">
+ -->        <!-- Navegación de imágenes -->
+      <!--   <div class="modal-navigation">
             <button onclick="showImage(1)" class="nav-button">Imagen 1</button>
             <button onclick="showImage(2)" class="nav-button">Imagen 2</button>
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -218,14 +220,6 @@
           </div>
         </div>
         </section>
-       <!--  <section class="seccion-siete">
-          <div class="container-title">
-              <h3 class="subtitle-testimonio">TESTIMONIOS</h3>
-          </div>
-          <div class="container-siete">
-              <video src="/assets/video/Video de Florencia Redi.mp4" controls preload="auto"></video>
-          </div>
-      </section> -->
 
       <section class="donar">
         <div class="container-donar">
@@ -237,12 +231,20 @@
                     <h3 class="card-title">Socio</h3>
                     <p class="card-text">Doná mensualmente para contribuir con el sostenimiento de los proyectos pedagógicos.</p>
                     <button class="card-button" onclick="openModal('modalSocio')">Más Información</button>
+                    <br>
+                    <br>
+                    <a href="mailto:secretaria@cfrlasretamas.com" target="_blank">Enviar correo a secretaria</a>
+
                 </div>
 
                 <div class="card">
                     <h3 class="card-title">Padrino</h3>
                     <p class="card-text">Doná para sostener la beca anual de un estudiante.</p>
                     <button class="card-button" onclick="openModal('modalPadrino')">Más Información</button>
+                    <br>
+                    <br>
+                    <a href="mailto:secretaria@cfrlasretamas.com" target="_blank">Enviar correo a secretaria</a>
+
                 </div>
 
                 <div class="card">
@@ -321,7 +323,8 @@
                   <img id="whatsapp-icon" src="/assets/images/vecteezy_whatsapp-logo-png-whatsapp-icon-png-whatsapp-transparent_18930622-removebg-preview.png" alt="WhatsApp Logo">
               </figure>
 
-                <p>Institucional@cfrlasretamas.edu.ar</p>
+              <p><a href="mailto:secretaria@cfrlasretamas.edu.ar">secretaria@cfrlasretamas.edu.ar</a></p>
+
             </div>
             <div class="legal-cfr">
               <p>&copy; 2024 RailCo. All rights reserved.</p>

@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const navbar = document.getElementById('navbar');
-    
+
     function handleScroll() {
         if (window.scrollY > 60) { // Ajusta el valor según cuando quieres que cambie el color de fondo
             navbar.classList.add('scrolled');
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     document.querySelector('.carousel-button.next').addEventListener('click', showNext);
 
-    setInterval(showNext, 4000); 
+    setInterval(showNext, 4000);
 });
 let currentIndex = 0;
 const items = document.querySelectorAll('.carousel-item');
@@ -45,7 +45,7 @@ function showNextItem() {
     items[currentIndex].classList.add('active');
 }
 
-/* -------------*/ 
+/* -------------*/
 document.addEventListener('DOMContentLoaded', () => {
     let currentIndex = 0;
     const items = document.querySelectorAll('.carousel-item-dos');
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', () => {
         header.addEventListener('click', function () {
             const section = this.parentElement;
             const content = section.querySelector('.accordion-content-ideario');
-            
+
             // Check if the clicked section is already active
             const isActive = section.classList.contains('active');
 
@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (acordeon) {
             // Añade la clase para marcar el acordeón como activo
             acordeon.classList.add('active');
-            
+
             // Despliega el contenido del acordeón
             const content = acordeon.querySelector('.accordion-content-ideario');
             if (content) {
@@ -194,12 +194,12 @@ var timelineSwiper = new Swiper ('.timeline .swiper-container', {
       }
     }
   });
-  
+
 
    // Selecciona los botones de proyectos y la superposición
    function animateNumber(element, start, end, duration) {
     let startTime = null;
-    
+
     function updateNumber(currentTime) {
         if (startTime === null) startTime = currentTime;
         const progress = currentTime - startTime;
@@ -209,7 +209,7 @@ var timelineSwiper = new Swiper ('.timeline .swiper-container', {
             requestAnimationFrame(updateNumber);
         }
     }
-    
+
     requestAnimationFrame(updateNumber);
 }
 
@@ -225,3 +225,43 @@ counters.forEach((counter, index) => {
 });
 
 
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  let currentSlide = 0;
+
+  function showSlide() {
+      const slides = document.querySelector('.slider-images');
+      const totalSlides = slides.children.length;
+
+      // Muestra la siguiente imagen
+      currentSlide = (currentSlide + 1) % totalSlides;
+
+      // Calcula la posición de la imagen
+      const offset = -currentSlide * 100;
+      slides.style.transform = `translateX(${offset}%)`;
+  }
+
+  // Cambia de imagen cada 3 segundos
+  setInterval(showSlide, 3000);
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  let currentSlide = 0;
+  const slides = document.querySelector('.slider-wrapper');
+  const totalSlides = document.querySelectorAll('.slider-image').length;
+
+  function showSlide() {
+    // Actualiza el índice de la imagen actual
+    currentSlide = (currentSlide + 1) % totalSlides;
+
+    // Mueve el slider al 100% de su ancho multiplicado por el índice actual
+    const offset = -currentSlide * 100;
+    slides.style.transform = `translateX(${offset}%)`;
+  }
+
+  // Cambia de imagen cada 3 segundos
+  setInterval(showSlide, 3000);
+});

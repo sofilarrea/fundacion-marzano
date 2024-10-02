@@ -37,7 +37,7 @@ if (totalItems > 0) {
 const whatsappIcon = document.getElementById('whatsapp-icon');
 if (whatsappIcon) {
     whatsappIcon.addEventListener('click', () => {
-        const phoneNumber = '5492613395692';
+        const phoneNumber = '5492617744912';
         const message = 'Hola, me gustaría obtener más información';
         const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         window.open(whatsappURL, '_blank');
@@ -122,3 +122,5 @@ function copiarDatosBancarios() {
       console.error('Error al copiar los datos: ', err);
   });
 }
+
+
