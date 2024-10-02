@@ -23,7 +23,7 @@
   .parrafo-mision, .parrafo-vision,
       .parrafo-cfr {
     font-size: 1.2rem;
-    padding: 0 77px;
+    padding: 0 34px;
 }
 .tarjeta-ocho{
   width:  50%;
@@ -33,16 +33,16 @@
 .container-proyectos {
     display: flex;
     flex-direction: row;
-    
-  } 
+
+  }
   .tarjeta-ocho{
     width:  50%;
   }
 }
 .foto-las-retamas img {
-  
+
     border-radius: 20px;
-  
+
   }
   .date {
     font-size: 2rem;

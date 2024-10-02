@@ -122,3 +122,5 @@ function copiarDatosBancarios() {
       console.error('Error al copiar los datos: ', err);
   });
 }
+
+
