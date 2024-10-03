@@ -682,7 +682,7 @@
     background-size: cover;
     background-position: center;
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.619) 80%, rgba(10, 2, 9, 0.241)), url('/assets/images/Poner\ primera.jpg');
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.356) 80%, rgba(10, 2, 9, 0.241)), url('/assets/images/Poner\ primera.jpg');
     border-radius: 20px;
     padding: 20px;
 }
@@ -1682,4 +1682,7 @@ dd {
 .slider-image {
   width: 44%;
   flex-shrink: 0;
+}
+.email{
+  color:#0056b3;
 }
