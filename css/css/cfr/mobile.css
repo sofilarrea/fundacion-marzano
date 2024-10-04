@@ -203,7 +203,7 @@
   }
 
   .container-title {
-   margin-bottom: 20px;
+   margin-bottom: 5px;
   }
 
   .title {
@@ -260,10 +260,10 @@
       align-items: center;
       flex-direction: column;
   }
-  .cfr-proyectos .container-proyectos {
+  .cfr-proyectos  {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px;
   }
 
@@ -275,9 +275,10 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    max-width: 200px;
     width: 100%;
     text-align:left;
+    height: 229px;
   }
 
   .card-figure {
@@ -289,7 +290,7 @@
 
   .card-figure img {
     max-height: 100%; /* Esto asegurará que la imagen no sobrepase el contenedor */
-    max-width: 40%;
+    max-width: 50%;
   }
 
   .content-card {
@@ -298,7 +299,7 @@
 
   .container-proyectos {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     gap: 20px; /* Controla el espacio entre las tarjetas */
     flex-wrap: wrap;
   }

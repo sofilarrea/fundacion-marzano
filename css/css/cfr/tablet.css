@@ -137,3 +137,7 @@ justify-content: center;
 .parrafo-dos {
   padding: 37px;
 }
+.container-proyectos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas en desktop */
+}
