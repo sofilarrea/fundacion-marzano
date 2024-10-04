@@ -292,9 +292,16 @@
     max-height: 100%; /* Esto asegurará que la imagen no sobrepase el contenedor */
     max-width: 50%;
   }
-
+.card-midle{
+  position: relative;
+  top: -14%;
+}
   .content-card {
     margin-top: 15px;
+  }
+  .midle-content{
+    position: relative;
+    top: -17%;
   }
 
   .container-proyectos {
