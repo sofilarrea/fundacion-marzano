@@ -265,3 +265,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // Cambia de imagen cada 3 segundos
   setInterval(showSlide, 3000);
 });
+
+
+var myCarousel = new bootstrap.Carousel(document.querySelector('#carouselExampleIndicators'), {
+  interval: 2000,  // Intervalo de tiempo entre diapositivas (ajústalo si es necesario)
+  wrap: true      // Permite el ciclo continuo hacia adelante y hacia atrás
+});
