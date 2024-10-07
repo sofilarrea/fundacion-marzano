@@ -1317,6 +1317,7 @@ display: none;
   font-family: "Lato", sans-serif;
   margin-top: 50px;
   display: flex;
+  justify-content: center;
 }
 .subtitle-ideario{
    margin: 15px 0;
