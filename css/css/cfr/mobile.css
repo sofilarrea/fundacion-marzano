@@ -275,7 +275,7 @@
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 200px;
+    max-width: 221px;
     width: 100%;
     text-align:left;
     height: 229px;
@@ -303,7 +303,9 @@
     position: relative;
     top: -17%;
   }
-
+.cardd{
+  width: 250px;
+}
   .container-proyectos {
     display: flex;
     justify-content: center;
@@ -807,6 +809,10 @@
   .footer-cfr__addr {
     margin-right: 1.25em;
     margin-bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   }
 
   .footer-cfr__logo {
