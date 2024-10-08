@@ -141,3 +141,10 @@ justify-content: center;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Dos columnas en desktop */
 }
+.parrafo-vision,
+.parrafo-mision{
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: 'Lato', sans-serif;
+    padding: 0 14px;
+}
